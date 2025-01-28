@@ -1,0 +1,470 @@
+2025-01-07T18:44:06,761 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.headers: http-outgoing-0 << Date: Tue, 07 Jan 2025 13:14:06 GMT
+2025-01-07T18:44:06,761 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.headers: http-outgoing-0 << Content-Length: 1164
+2025-01-07T18:44:06,761 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.headers: http-outgoing-0 << Content-Type: text/html; charset=UTF-8
+2025-01-07T18:44:06,762 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.headers: http-outgoing-0 << X-ORACLE-DMS-ECID: 5a0b6ce1-509c-4e7c-9063-feb9bf7575d4-00000151
+2025-01-07T18:44:06,762 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.headers: http-outgoing-0 << X-ORACLE-DMS-RID: 0
+2025-01-07T18:44:06,766 FATAL [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.app.service.facade.json.client.HttpService: 28-2086-3795-2120-7234	Method failed: HTTP/1.1 404 Not Found
+2025-01-07T18:44:06,770 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.wire: http-outgoing-0 << "<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Draft//EN">[\n]"
+2025-01-07T18:44:06,770 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.wire: http-outgoing-0 << "<HTML>[\n]"
+2025-01-07T18:44:06,770 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.wire: http-outgoing-0 << "<HEAD>[\n]"
+2025-01-07T18:44:06,770 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.wire: http-outgoing-0 << "<TITLE>Error 404--Not Found</TITLE>[\n]"
+2025-01-07T18:44:06,770 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.wire: http-outgoing-0 << "</HEAD>[\n]"
+2025-01-07T18:44:06,770 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.wire: http-outgoing-0 << "<BODY bgcolor="white">[\n]"
+2025-01-07T18:44:06,771 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.wire: http-outgoing-0 << "<FONT FACE=Helvetica><BR CLEAR=all>[\n]"
+2025-01-07T18:44:06,772 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.wire: http-outgoing-0 << "<TABLE border=0 cellspacing=5><TR><TD><BR CLEAR=all>[\n]"
+2025-01-07T18:44:06,772 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.wire: http-outgoing-0 << "<FONT FACE="Helvetica" COLOR="black" SIZE="3"><H2>Error 404--Not Found</H2>[\n]"
+2025-01-07T18:44:06,772 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.wire: http-outgoing-0 << "</FONT></TD></TR>[\n]"
+2025-01-07T18:44:06,772 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.wire: http-outgoing-0 << "</TABLE>[\n]"
+2025-01-07T18:44:06,773 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.wire: http-outgoing-0 << "<TABLE border=0 width=100% cellpadding=10><TR><TD VALIGN=top WIDTH=100% BGCOLOR=white><FONT FACE="Courier New"><FONT FACE="Helvetica" SIZE="3"><H3>From RFC 2068 <i>Hypertext Transfer Protocol -- HTTP/1.1</i>:</H3>[\n]"
+2025-01-07T18:44:06,773 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.wire: http-outgoing-0 << "</FONT><FONT FACE="Helvetica" SIZE="3"><H4>10.4.5 404 Not Found</H4>[\n]"
+2025-01-07T18:44:06,773 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.wire: http-outgoing-0 << "</FONT><P><FONT FACE="Courier New">The server has not found anything matching the Request-URI. No indication is given of whether the condition is temporary or permanent.</p><p>If the server does not wish to make this information available to the client, the status code 403 (Forbidden) can be used instead. The 410 (Gone) status code SHOULD be used if the server knows, through some internally configurable mechanism, that an old resource is permanently unavailable and has no forwarding address.</FONT></P>[\n]"
+2025-01-07T18:44:06,773 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.wire: http-outgoing-0 << "</FONT></TD></TR>[\n]"
+2025-01-07T18:44:06,773 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.wire: http-outgoing-0 << "</TABLE>[\n]"
+2025-01-07T18:44:06,773 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.wire: http-outgoing-0 << "[\n]"
+2025-01-07T18:44:06,773 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.wire: http-outgoing-0 << "</BODY>[\n]"
+2025-01-07T18:44:06,773 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.wire: http-outgoing-0 << "</HTML>[\n]"
+2025-01-07T18:44:06,773 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.impl.conn.DefaultManagedHttpClientConnection: http-outgoing-0: Close connection
+2025-01-07T18:44:06,773 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.impl.execchain.MainClientExec: Connection discarded
+2025-01-07T18:44:06,774 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.impl.conn.PoolingHttpClientConnectionManager: Connection released: [id: 0][route: {}->http://host-mnt.host:7001][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2025-01-07T18:44:06,775 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.app.service.facade.json.client.HttpService: 28-2086-3795-2120-7234	Response from Host: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Draft//EN">
+<HTML>
+<HEAD>
+<TITLE>Error 404--Not Found</TITLE>
+</HEAD>
+<BODY bgcolor="white">
+<FONT FACE=Helvetica><BR CLEAR=all>
+<TABLE border=0 cellspacing=5><TR><TD><BR CLEAR=all>
+<FONT FACE="Helvetica" COLOR="black" SIZE="3"><H2>Error 404--Not Found</H2>
+</FONT></TD></TR>
+</TABLE>
+<TABLE border=0 width=100% cellpadding=10><TR><TD VALIGN=top WIDTH=100% BGCOLOR=white><FONT FACE="Courier New"><FONT FACE="Helvetica" SIZE="3"><H3>From RFC 2068 <i>Hypertext Transfer Protocol -- HTTP/1.1</i>:</H3>
+</FONT><FONT FACE="Helvetica" SIZE="3"><H4>10.4.5 404 Not Found</H4>
+</FONT><P><FONT FACE="Courier New">The server has not found anything matching the Request-URI. No indication is given of whether the condition is temporary or permanent.</p><p>If the server does not wish to make this information available to the client, the status code 403 (Forbidden) can be used instead. The 410 (Gone) status code SHOULD be used if the server knows, through some internally configurable mechanism, that an old resource is permanently unavailable and has no forwarding address.</FONT></P>
+</FONT></TD></TR>
+</TABLE>
+
+</BODY>
+</HTML>
+
+2025-01-07T18:44:06,775 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.impl.execchain.MainClientExec: Cancelling request execution
+2025-01-07T18:44:06,775 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.app.client.core.AbstractServiceClient: 28-2086-3795-2120-7234	Response JSON String :<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Draft//EN">
+<HTML>
+<HEAD>
+<TITLE>Error 404--Not Found</TITLE>
+</HEAD>
+<BODY bgcolor="white">
+<FONT FACE=Helvetica><BR CLEAR=all>
+<TABLE border=0 cellspacing=5><TR><TD><BR CLEAR=all>
+<FONT FACE="Helvetica" COLOR="black" SIZE="3"><H2>Error 404--Not Found</H2>
+</FONT></TD></TR>
+</TABLE>
+<TABLE border=0 width=100% cellpadding=10><TR><TD VALIGN=top WIDTH=100% BGCOLOR=white><FONT FACE="Courier New"><FONT FACE="Helvetica" SIZE="3"><H3>From RFC 2068 <i>Hypertext Transfer Protocol -- HTTP/1.1</i>:</H3>
+</FONT><FONT FACE="Helvetica" SIZE="3"><H4>10.4.5 404 Not Found</H4>
+</FONT><P><FONT FACE="Courier New">The server has not found anything matching the Request-URI. No indication is given of whether the condition is temporary or permanent.</p><p>If the server does not wish to make this information available to the client, the status code 403 (Forbidden) can be used instead. The 410 (Gone) status code SHOULD be used if the server knows, through some internally configurable mechanism, that an old resource is permanently unavailable and has no forwarding address.</FONT></P>
+</FONT></TD></TR>
+</TABLE>
+
+</BODY>
+</HTML>
+
+2025-01-07T18:44:06,775 FATAL [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.app.client.core.ServiceClient: 28-2086-3795-2120-7234	Invalid JSON Response
+org.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:503) ~[json-20231013.jar:?]
+	at org.json.JSONObject.<init>(JSONObject.java:208) ~[json-20231013.jar:?]
+	at org.json.JSONObject.<init>(JSONObject.java:402) ~[json-20231013.jar:?]
+	at com.ofss.fc.app.client.core.ServiceClient.deserializeHostResponse(ServiceClient.java:488) [com.ofss.fc.appcore.jar:?]
+	at com.ofss.fc.app.client.core.AbstractServiceClient.executeHostRequest(AbstractServiceClient.java:188) [com.ofss.fc.appcore.jar:?]
+	at com.ofss.fc.brn.appx.commonservice.core.service.client.proxy.HostCoreApplicationServiceProxyFacade.fetchHostProcessingDates(HostCoreApplicationServiceProxyFacade.java:205) [com.ofss.fc.brn.appx.client.proxy.jar:?]
+	at com.ofss.fc.brn.core.service.formdefinition.FormDefinitionService.executeHostRequest(FormDefinitionService.java:226) [com.ofss.fc.brn.core.jar:?]
+	at com.ofss.fc.brn.core.service.formdefinition.FormDefinitionService.getTransactionDefinition(FormDefinitionService.java:165) [com.ofss.fc.brn.core.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_391]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_391]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_391]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_391]
+	at com.ofss.fc.app.server.core.AbstractServiceFacade.invokeMethod(AbstractServiceFacade.java:177) [com.ofss.fc.appcore.jar:?]
+	at com.ofss.fc.app.server.core.AbstractServiceFacade.process(AbstractServiceFacade.java:81) [com.ofss.fc.appcore.jar:?]
+	at com.ofss.fc.branch.service.ServiceManager.processJSONRequest(ServiceManager.java:274) [_wl_cls_gen.jar:?]
+	at com.ofss.fc.branch.service.ServiceManager.process(ServiceManager.java:105) [_wl_cls_gen.jar:?]
+	at com.ofss.fc.branch.service.ServiceManager.processRequest(ServiceManager.java:73) [_wl_cls_gen.jar:?]
+	at com.ofss.fc.branch.net.http.HTTPListener.processMessage(HTTPListener.java:312) [_wl_cls_gen.jar:?]
+	at com.ofss.fc.branch.net.http.HTTPListener.handleMessage(HTTPListener.java:204) [_wl_cls_gen.jar:?]
+	at com.ofss.fc.branch.net.http.HTTPListener.doPost(HTTPListener.java:125) [_wl_cls_gen.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:665) [jakarta.servlet.jakarta.servlet-api.jar:4.0.2]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) [jakarta.servlet.jakarta.servlet-api.jar:4.0.2]
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:295) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:260) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:137) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:353) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:250) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3862) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3829) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:344) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.security.service.SecurityManager.runAsForUserCode(SecurityManager.java:197) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSecurityProvider.runAsForUserCode(WlsSecurityProvider.java:203) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSubjectHandle.run(WlsSubjectHandle.java:71) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.processSecuredExecute(WebAppServletContext.java:2502) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.doSecuredExecute(WebAppServletContext.java:2351) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2326) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2304) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.runInternal(ServletRequestImpl.java:1779) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1733) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.ContainerSupportProviderImpl$WlsRequestExecutor.run(ContainerSupportProviderImpl.java:272) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager._runAs(ComponentInvocationContextManager.java:352) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager.runAs(ComponentInvocationContextManager.java:337) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.work.LivePartitionUtility.doRunWorkUnderContext(LivePartitionUtility.java:57) [com.oracle.weblogic.work.jar:14.1.1.0]
+	at weblogic.work.PartitionUtility.runWorkUnderContext(PartitionUtility.java:41) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.SelfTuningWorkManagerImpl.runWorkUnderContext(SelfTuningWorkManagerImpl.java:651) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:420) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:360) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+2025-01-07T18:44:06,856 FATAL [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.app.client.core.AbstractServiceClient: 28-2086-3795-2120-7234	Error while de-serializing response
+com.ofss.fc.app.client.core.ServiceClientException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at com.ofss.fc.app.client.core.ServiceClient.deserializeHostResponse(ServiceClient.java:496) ~[com.ofss.fc.appcore.jar:?]
+	at com.ofss.fc.app.client.core.AbstractServiceClient.executeHostRequest(AbstractServiceClient.java:188) [com.ofss.fc.appcore.jar:?]
+	at com.ofss.fc.brn.appx.commonservice.core.service.client.proxy.HostCoreApplicationServiceProxyFacade.fetchHostProcessingDates(HostCoreApplicationServiceProxyFacade.java:205) [com.ofss.fc.brn.appx.client.proxy.jar:?]
+	at com.ofss.fc.brn.core.service.formdefinition.FormDefinitionService.executeHostRequest(FormDefinitionService.java:226) [com.ofss.fc.brn.core.jar:?]
+	at com.ofss.fc.brn.core.service.formdefinition.FormDefinitionService.getTransactionDefinition(FormDefinitionService.java:165) [com.ofss.fc.brn.core.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_391]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_391]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_391]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_391]
+	at com.ofss.fc.app.server.core.AbstractServiceFacade.invokeMethod(AbstractServiceFacade.java:177) [com.ofss.fc.appcore.jar:?]
+	at com.ofss.fc.app.server.core.AbstractServiceFacade.process(AbstractServiceFacade.java:81) [com.ofss.fc.appcore.jar:?]
+	at com.ofss.fc.branch.service.ServiceManager.processJSONRequest(ServiceManager.java:274) [_wl_cls_gen.jar:?]
+	at com.ofss.fc.branch.service.ServiceManager.process(ServiceManager.java:105) [_wl_cls_gen.jar:?]
+	at com.ofss.fc.branch.service.ServiceManager.processRequest(ServiceManager.java:73) [_wl_cls_gen.jar:?]
+	at com.ofss.fc.branch.net.http.HTTPListener.processMessage(HTTPListener.java:312) [_wl_cls_gen.jar:?]
+	at com.ofss.fc.branch.net.http.HTTPListener.handleMessage(HTTPListener.java:204) [_wl_cls_gen.jar:?]
+	at com.ofss.fc.branch.net.http.HTTPListener.doPost(HTTPListener.java:125) [_wl_cls_gen.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:665) [jakarta.servlet.jakarta.servlet-api.jar:4.0.2]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) [jakarta.servlet.jakarta.servlet-api.jar:4.0.2]
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:295) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:260) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:137) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:353) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:250) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3862) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3829) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:344) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.security.service.SecurityManager.runAsForUserCode(SecurityManager.java:197) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSecurityProvider.runAsForUserCode(WlsSecurityProvider.java:203) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSubjectHandle.run(WlsSubjectHandle.java:71) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.processSecuredExecute(WebAppServletContext.java:2502) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.doSecuredExecute(WebAppServletContext.java:2351) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2326) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2304) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.runInternal(ServletRequestImpl.java:1779) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1733) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.ContainerSupportProviderImpl$WlsRequestExecutor.run(ContainerSupportProviderImpl.java:272) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager._runAs(ComponentInvocationContextManager.java:352) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager.runAs(ComponentInvocationContextManager.java:337) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.work.LivePartitionUtility.doRunWorkUnderContext(LivePartitionUtility.java:57) [com.oracle.weblogic.work.jar:14.1.1.0]
+	at weblogic.work.PartitionUtility.runWorkUnderContext(PartitionUtility.java:41) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.SelfTuningWorkManagerImpl.runWorkUnderContext(SelfTuningWorkManagerImpl.java:651) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:420) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:360) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+Caused by: org.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:503) ~[json-20231013.jar:?]
+	at org.json.JSONObject.<init>(JSONObject.java:208) ~[json-20231013.jar:?]
+	at org.json.JSONObject.<init>(JSONObject.java:402) ~[json-20231013.jar:?]
+	at com.ofss.fc.app.client.core.ServiceClient.deserializeHostResponse(ServiceClient.java:488) ~[com.ofss.fc.appcore.jar:?]
+	... 43 more
+2025-01-07T18:44:06,860 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.infra.error.FCRJMessages: 28-2086-3795-2120-7234	Start Loading of the Error Details
+2025-01-07T18:44:06,860 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.infra.jdbc.FCRJConnection: 28-2086-3795-2120-7234	Inside FCRJConnection constructor :
+2025-01-07T18:44:06,860 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.infra.jdbc.FCRJConnection: 28-2086-3795-2120-7234	Inside FCRJConnection constructor :oracle.jdbc.OracleDriver
+2025-01-07T18:44:06,860 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.infra.jdbc.FCRJConnection: 28-2086-3795-2120-7234	Inside FCRJConnection constructor :jdbc:oracle:thin:@100.76.170.147:1521/CSBKDB
+2025-01-07T18:44:06,860 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.infra.jdbc.FCRJConnection: 28-2086-3795-2120-7234	INFRA DEBUG----->inside openConnection() Entity Code is :-1
+2025-01-07T18:44:07,590 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.infra.jdbc.FCRJConnection: 28-2086-3795-2120-7234	INFRA DEBUG----->     database name: Oracle
+2025-01-07T18:44:07,590 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.infra.jdbc.FCRJConnection: 28-2086-3795-2120-7234	INFRA DEBUG----->     database type: oracle
+2025-01-07T18:44:07,590 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.infra.jdbc.FCRJConnection: 28-2086-3795-2120-7234	INFRA DEBUG----->   setSessionId()  [NO ACTION]  Exit:
+2025-01-07T18:44:07,590 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.infra.jdbc.FCRJConnection: 28-2086-3795-2120-7234	INFRA DEBUG----->     openConnection() Exit:
+2025-01-07T18:44:10,234  INFO [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.infra.error.FCRJMessages: 28-2086-3795-2120-7234	Messages loaded : 13644
+2025-01-07T18:44:10,235 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.infra.error.FCRJMessages: 28-2086-3795-2120-7234	End of the Loading of Messages
+2025-01-07T18:44:10,236 FATAL [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.core.service.formdefinition.FormDefinitionService: 28-2086-3795-2120-7234	FatalException in ICoreApplicationServiceProxy 
+com.ofss.fc.infra.exception.FatalException: 
+	at com.ofss.fc.app.client.core.AbstractServiceClient.executeHostRequest(AbstractServiceClient.java:196) ~[com.ofss.fc.appcore.jar:?]
+	at com.ofss.fc.brn.appx.commonservice.core.service.client.proxy.HostCoreApplicationServiceProxyFacade.fetchHostProcessingDates(HostCoreApplicationServiceProxyFacade.java:205) ~[com.ofss.fc.brn.appx.client.proxy.jar:?]
+	at com.ofss.fc.brn.core.service.formdefinition.FormDefinitionService.executeHostRequest(FormDefinitionService.java:226) [com.ofss.fc.brn.core.jar:?]
+	at com.ofss.fc.brn.core.service.formdefinition.FormDefinitionService.getTransactionDefinition(FormDefinitionService.java:165) [com.ofss.fc.brn.core.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_391]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_391]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_391]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_391]
+	at com.ofss.fc.app.server.core.AbstractServiceFacade.invokeMethod(AbstractServiceFacade.java:177) [com.ofss.fc.appcore.jar:?]
+	at com.ofss.fc.app.server.core.AbstractServiceFacade.process(AbstractServiceFacade.java:81) [com.ofss.fc.appcore.jar:?]
+	at com.ofss.fc.branch.service.ServiceManager.processJSONRequest(ServiceManager.java:274) [_wl_cls_gen.jar:?]
+	at com.ofss.fc.branch.service.ServiceManager.process(ServiceManager.java:105) [_wl_cls_gen.jar:?]
+	at com.ofss.fc.branch.service.ServiceManager.processRequest(ServiceManager.java:73) [_wl_cls_gen.jar:?]
+	at com.ofss.fc.branch.net.http.HTTPListener.processMessage(HTTPListener.java:312) [_wl_cls_gen.jar:?]
+	at com.ofss.fc.branch.net.http.HTTPListener.handleMessage(HTTPListener.java:204) [_wl_cls_gen.jar:?]
+	at com.ofss.fc.branch.net.http.HTTPListener.doPost(HTTPListener.java:125) [_wl_cls_gen.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:665) [jakarta.servlet.jakarta.servlet-api.jar:4.0.2]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) [jakarta.servlet.jakarta.servlet-api.jar:4.0.2]
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:295) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:260) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:137) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:353) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:250) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3862) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3829) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:344) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.security.service.SecurityManager.runAsForUserCode(SecurityManager.java:197) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSecurityProvider.runAsForUserCode(WlsSecurityProvider.java:203) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSubjectHandle.run(WlsSubjectHandle.java:71) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.processSecuredExecute(WebAppServletContext.java:2502) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.doSecuredExecute(WebAppServletContext.java:2351) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2326) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2304) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.runInternal(ServletRequestImpl.java:1779) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1733) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.ContainerSupportProviderImpl$WlsRequestExecutor.run(ContainerSupportProviderImpl.java:272) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager._runAs(ComponentInvocationContextManager.java:352) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager.runAs(ComponentInvocationContextManager.java:337) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.work.LivePartitionUtility.doRunWorkUnderContext(LivePartitionUtility.java:57) [com.oracle.weblogic.work.jar:14.1.1.0]
+	at weblogic.work.PartitionUtility.runWorkUnderContext(PartitionUtility.java:41) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.SelfTuningWorkManagerImpl.runWorkUnderContext(SelfTuningWorkManagerImpl.java:651) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:420) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:360) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+Caused by: org.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:503) ~[json-20231013.jar:?]
+	at org.json.JSONObject.<init>(JSONObject.java:208) ~[json-20231013.jar:?]
+	at org.json.JSONObject.<init>(JSONObject.java:402) ~[json-20231013.jar:?]
+	at com.ofss.fc.app.client.core.ServiceClient.deserializeHostResponse(ServiceClient.java:488) ~[com.ofss.fc.appcore.jar:?]
+	at com.ofss.fc.app.client.core.AbstractServiceClient.executeHostRequest(AbstractServiceClient.java:188) ~[com.ofss.fc.appcore.jar:?]
+	... 42 more
+2025-01-07T18:44:10,237 FATAL [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.core.service.formdefinition.FormDefinitionService: 28-2086-3795-2120-7234	Fatal Exception from getTransactionDefinition
+com.ofss.fc.infra.exception.FatalException: 
+	at com.ofss.fc.app.client.core.AbstractServiceClient.executeHostRequest(AbstractServiceClient.java:196) ~[com.ofss.fc.appcore.jar:?]
+	at com.ofss.fc.brn.appx.commonservice.core.service.client.proxy.HostCoreApplicationServiceProxyFacade.fetchHostProcessingDates(HostCoreApplicationServiceProxyFacade.java:205) ~[com.ofss.fc.brn.appx.client.proxy.jar:?]
+	at com.ofss.fc.brn.core.service.formdefinition.FormDefinitionService.executeHostRequest(FormDefinitionService.java:226) ~[com.ofss.fc.brn.core.jar:?]
+	at com.ofss.fc.brn.core.service.formdefinition.FormDefinitionService.getTransactionDefinition(FormDefinitionService.java:165) [com.ofss.fc.brn.core.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_391]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_391]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_391]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_391]
+	at com.ofss.fc.app.server.core.AbstractServiceFacade.invokeMethod(AbstractServiceFacade.java:177) [com.ofss.fc.appcore.jar:?]
+	at com.ofss.fc.app.server.core.AbstractServiceFacade.process(AbstractServiceFacade.java:81) [com.ofss.fc.appcore.jar:?]
+	at com.ofss.fc.branch.service.ServiceManager.processJSONRequest(ServiceManager.java:274) [_wl_cls_gen.jar:?]
+	at com.ofss.fc.branch.service.ServiceManager.process(ServiceManager.java:105) [_wl_cls_gen.jar:?]
+	at com.ofss.fc.branch.service.ServiceManager.processRequest(ServiceManager.java:73) [_wl_cls_gen.jar:?]
+	at com.ofss.fc.branch.net.http.HTTPListener.processMessage(HTTPListener.java:312) [_wl_cls_gen.jar:?]
+	at com.ofss.fc.branch.net.http.HTTPListener.handleMessage(HTTPListener.java:204) [_wl_cls_gen.jar:?]
+	at com.ofss.fc.branch.net.http.HTTPListener.doPost(HTTPListener.java:125) [_wl_cls_gen.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:665) [jakarta.servlet.jakarta.servlet-api.jar:4.0.2]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) [jakarta.servlet.jakarta.servlet-api.jar:4.0.2]
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:295) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:260) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:137) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:353) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:250) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3862) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3829) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:344) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.security.service.SecurityManager.runAsForUserCode(SecurityManager.java:197) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSecurityProvider.runAsForUserCode(WlsSecurityProvider.java:203) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSubjectHandle.run(WlsSubjectHandle.java:71) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.processSecuredExecute(WebAppServletContext.java:2502) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.doSecuredExecute(WebAppServletContext.java:2351) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2326) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2304) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.runInternal(ServletRequestImpl.java:1779) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1733) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.ContainerSupportProviderImpl$WlsRequestExecutor.run(ContainerSupportProviderImpl.java:272) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager._runAs(ComponentInvocationContextManager.java:352) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager.runAs(ComponentInvocationContextManager.java:337) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.work.LivePartitionUtility.doRunWorkUnderContext(LivePartitionUtility.java:57) [com.oracle.weblogic.work.jar:14.1.1.0]
+	at weblogic.work.PartitionUtility.runWorkUnderContext(PartitionUtility.java:41) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.SelfTuningWorkManagerImpl.runWorkUnderContext(SelfTuningWorkManagerImpl.java:651) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:420) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:360) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+Caused by: org.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:503) ~[json-20231013.jar:?]
+	at org.json.JSONObject.<init>(JSONObject.java:208) ~[json-20231013.jar:?]
+	at org.json.JSONObject.<init>(JSONObject.java:402) ~[json-20231013.jar:?]
+	at com.ofss.fc.app.client.core.ServiceClient.deserializeHostResponse(ServiceClient.java:488) ~[com.ofss.fc.appcore.jar:?]
+	at com.ofss.fc.app.client.core.AbstractServiceClient.executeHostRequest(AbstractServiceClient.java:188) ~[com.ofss.fc.appcore.jar:?]
+	... 42 more
+2025-01-07T18:44:10,240 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.das.orm.eclipselink.EclipseLinkDataAccessManager: 28-2086-3795-2120-7234	CLEAN UP SESSION
+2025-01-07T18:44:10,240 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.das.orm.eclipselink.EclipseLinkDataAccessManager: 28-2086-3795-2120-7234	CLOSE_FORCE:com.ofss.fc.brn.infra.das.orm.eclipselink.EclipseLinkDataAccessManager:closeSession:257:
+2025-01-07T18:44:10,248  WARN [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.orm.app.Interaction: 28-2086-3795-2120-7234	Fatal thrown from Interaction close() {
+    "cause": null,
+    "class": "com.ofss.fc.infra.exception.FatalException",
+    "errorCode": "FC_JSON_CLIENT_ERR_003",
+    "localizedMessage": "Couldn't find the Message for [FC_JSON_CLIENT_ERR_003]",
+    "message": "Couldn't find the Message for [FC_JSON_CLIENT_ERR_003]",
+    "reason": {
+        "class": "com.ofss.fc.infra.exception.ReplyMessage",
+        "code": {
+            "class": "com.ofss.fc.infra.enumeration.ReplyMessageType",
+            "enumValue": "29",
+            "mutable": "false",
+            "value": "29"
+        },
+        "message": " Internal OLTP Error. "
+    },
+    "responseCode": {
+        "class": "com.ofss.fc.infra.enumeration.ResponseCodeType",
+        "enumValue": "99",
+        "mutable": "false",
+        "value": "99"
+    }
+}
+2025-01-07T18:44:10,248 FATAL [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.orm.app.Interaction: 28-2086-3795-2120-7234	Fatal thrown from Interaction close()
+com.ofss.fc.infra.exception.FatalException: Couldn't find the Message for [FC_JSON_CLIENT_ERR_003]
+	at com.ofss.fc.brn.infra.orm.app.Interaction.analyzeAndThrowException(Interaction.java:936) ~[com.ofss.fc.brn.infra.jar:?]
+	at com.ofss.fc.brn.infra.orm.app.Interaction.close(Interaction.java:771) [com.ofss.fc.brn.infra.jar:?]
+	at com.ofss.fc.brn.infra.orm.app.Interaction.close(Interaction.java:678) [com.ofss.fc.brn.infra.jar:?]
+	at com.ofss.fc.brn.core.service.formdefinition.FormDefinitionService.getTransactionDefinition(FormDefinitionService.java:202) [com.ofss.fc.brn.core.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_391]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_391]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_391]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_391]
+	at com.ofss.fc.app.server.core.AbstractServiceFacade.invokeMethod(AbstractServiceFacade.java:177) [com.ofss.fc.appcore.jar:?]
+	at com.ofss.fc.app.server.core.AbstractServiceFacade.process(AbstractServiceFacade.java:81) [com.ofss.fc.appcore.jar:?]
+	at com.ofss.fc.branch.service.ServiceManager.processJSONRequest(ServiceManager.java:274) [_wl_cls_gen.jar:?]
+	at com.ofss.fc.branch.service.ServiceManager.process(ServiceManager.java:105) [_wl_cls_gen.jar:?]
+	at com.ofss.fc.branch.service.ServiceManager.processRequest(ServiceManager.java:73) [_wl_cls_gen.jar:?]
+	at com.ofss.fc.branch.net.http.HTTPListener.processMessage(HTTPListener.java:312) [_wl_cls_gen.jar:?]
+	at com.ofss.fc.branch.net.http.HTTPListener.handleMessage(HTTPListener.java:204) [_wl_cls_gen.jar:?]
+	at com.ofss.fc.branch.net.http.HTTPListener.doPost(HTTPListener.java:125) [_wl_cls_gen.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:665) [jakarta.servlet.jakarta.servlet-api.jar:4.0.2]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) [jakarta.servlet.jakarta.servlet-api.jar:4.0.2]
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:295) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:260) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:137) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:353) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:250) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3862) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3829) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:344) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.security.service.SecurityManager.runAsForUserCode(SecurityManager.java:197) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSecurityProvider.runAsForUserCode(WlsSecurityProvider.java:203) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSubjectHandle.run(WlsSubjectHandle.java:71) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.processSecuredExecute(WebAppServletContext.java:2502) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.doSecuredExecute(WebAppServletContext.java:2351) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2326) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2304) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.runInternal(ServletRequestImpl.java:1779) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1733) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.ContainerSupportProviderImpl$WlsRequestExecutor.run(ContainerSupportProviderImpl.java:272) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager._runAs(ComponentInvocationContextManager.java:352) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager.runAs(ComponentInvocationContextManager.java:337) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.work.LivePartitionUtility.doRunWorkUnderContext(LivePartitionUtility.java:57) [com.oracle.weblogic.work.jar:14.1.1.0]
+	at weblogic.work.PartitionUtility.runWorkUnderContext(PartitionUtility.java:41) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.SelfTuningWorkManagerImpl.runWorkUnderContext(SelfTuningWorkManagerImpl.java:651) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:420) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:360) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+2025-01-07T18:44:10,249 FATAL [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.app.server.core.AbstractServiceFacade: 28-2086-3842-9576-9853	Error while invoking method
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_391]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_391]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_391]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_391]
+	at com.ofss.fc.app.server.core.AbstractServiceFacade.invokeMethod(AbstractServiceFacade.java:177) [com.ofss.fc.appcore.jar:?]
+	at com.ofss.fc.app.server.core.AbstractServiceFacade.process(AbstractServiceFacade.java:81) [com.ofss.fc.appcore.jar:?]
+	at com.ofss.fc.branch.service.ServiceManager.processJSONRequest(ServiceManager.java:274) [_wl_cls_gen.jar:?]
+	at com.ofss.fc.branch.service.ServiceManager.process(ServiceManager.java:105) [_wl_cls_gen.jar:?]
+	at com.ofss.fc.branch.service.ServiceManager.processRequest(ServiceManager.java:73) [_wl_cls_gen.jar:?]
+	at com.ofss.fc.branch.net.http.HTTPListener.processMessage(HTTPListener.java:312) [_wl_cls_gen.jar:?]
+	at com.ofss.fc.branch.net.http.HTTPListener.handleMessage(HTTPListener.java:204) [_wl_cls_gen.jar:?]
+	at com.ofss.fc.branch.net.http.HTTPListener.doPost(HTTPListener.java:125) [_wl_cls_gen.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:665) [jakarta.servlet.jakarta.servlet-api.jar:4.0.2]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) [jakarta.servlet.jakarta.servlet-api.jar:4.0.2]
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:295) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:260) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:137) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:353) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:250) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3862) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3829) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:344) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.security.service.SecurityManager.runAsForUserCode(SecurityManager.java:197) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSecurityProvider.runAsForUserCode(WlsSecurityProvider.java:203) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSubjectHandle.run(WlsSubjectHandle.java:71) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.processSecuredExecute(WebAppServletContext.java:2502) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.doSecuredExecute(WebAppServletContext.java:2351) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2326) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2304) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.runInternal(ServletRequestImpl.java:1779) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1733) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.ContainerSupportProviderImpl$WlsRequestExecutor.run(ContainerSupportProviderImpl.java:272) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager._runAs(ComponentInvocationContextManager.java:352) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager.runAs(ComponentInvocationContextManager.java:337) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.work.LivePartitionUtility.doRunWorkUnderContext(LivePartitionUtility.java:57) [com.oracle.weblogic.work.jar:14.1.1.0]
+	at weblogic.work.PartitionUtility.runWorkUnderContext(PartitionUtility.java:41) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.SelfTuningWorkManagerImpl.runWorkUnderContext(SelfTuningWorkManagerImpl.java:651) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:420) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:360) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+Caused by: com.ofss.fc.infra.exception.FatalException: Couldn't find the Message for [FC_JSON_CLIENT_ERR_003]
+	... 1 more
+2025-01-07T18:44:10,249 DEBUG [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.app.server.core.AbstractServiceFacade: 28-2086-3842-9576-9853	Fatal Exception while invoking method {
+    "cause": null,
+    "class": "com.ofss.fc.infra.exception.FatalException",
+    "errorCode": "FC_JSON_CLIENT_ERR_003",
+    "localizedMessage": "Couldn't find the Message for [FC_JSON_CLIENT_ERR_003]",
+    "message": "Couldn't find the Message for [FC_JSON_CLIENT_ERR_003]",
+    "reason": {
+        "class": "com.ofss.fc.infra.exception.ReplyMessage",
+        "code": {
+            "class": "com.ofss.fc.infra.enumeration.ReplyMessageType",
+            "enumValue": "29",
+            "mutable": "false",
+            "value": "29"
+        },
+        "message": " Internal OLTP Error. "
+    },
+    "responseCode": {
+        "class": "com.ofss.fc.infra.enumeration.ResponseCodeType",
+        "enumValue": "99",
+        "mutable": "false",
+        "value": "99"
+    }
+}
+2025-01-07T18:44:10,253 FATAL [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.httptime: 28-2086-3842-9576-9853	Total time taken : 4798 ms
+2025-01-07T18:44:10,253  INFO [[ACTIVE] ExecuteThread: '8' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.branch.net.http.HTTPListener: 28-2086-3842-9576-9853	Start of HTTPListener doPost method.
+2025-01-07T18:44:13,204 DEBUG [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.orm.app.Interaction: 36-2086-3872-5028-7207	CURRENT SESSION COUNT = 0
+2025-01-07T18:44:13,204 DEBUG [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.das.orm.eclipselink.EclipseLinkDataAccessManager: 36-2086-3872-5028-7207	OPEN_NEW:com.ofss.fc.brn.infra.orm.app.Interaction:begin:241:
+2025-01-07T18:44:13,208 DEBUG [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.infra.jdbc.FCRJConnection: 36-2086-3872-5028-7207	INFRA DEBUG----->     database name: Oracle
+2025-01-07T18:44:13,208  INFO [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.infra.jdbc.FCRJConnection: 36-2086-3872-5028-7207	logging for :Core Banking
+2025-01-07T18:44:13,209 DEBUG [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.infra.jdbc.FCRJConnection: 36-2086-3872-5028-7207	INFRA DEBUG----->   setClientIdentifier() Exit :
+2025-01-07T18:44:13,210  INFO [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.procedure.PkSmsSessionFuncs: 36-2086-3872-5028-7207	DEBUG Procedure execution starts for ApValidateSessionInfo
+2025-01-07T18:44:13,211  INFO [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.procedure.PkSmsSessionFuncs: 36-2086-3872-5028-7207	INPUT PARAM PiCodSessionId=VFRBTllB114781036750976551108114888343828710473116561101041196161
+2025-01-07T18:44:13,211  INFO [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.procedure.PkSmsSessionFuncs: 36-2086-3872-5028-7207	INPUT PARAM PiCodUserNo=11001183
+2025-01-07T18:44:13,211  INFO [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.procedure.PkSmsSessionFuncs: 36-2086-3872-5028-7207	INPUT PARAM PiCodTermId=10.42.0.1
+2025-01-07T18:44:13,211  INFO [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.procedure.PkSmsSessionFuncs: 36-2086-3872-5028-7207	INPUT PARAM PoTimeSessInactive=0
+2025-01-07T18:44:13,212 DEBUG [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.procedure.PkSmsSessionFuncs: 36-2086-3872-5028-7207	Total time taken byApValidateSessionInfo. : 1
+2025-01-07T18:44:13,212  INFO [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.procedure.PkSmsSessionFuncs: 36-2086-3872-5028-7207	DEBUG Procedure execution ends for ApValidateSessionInfo
+2025-01-07T18:44:13,212  INFO [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.procedure.PkSmsSessionFuncs: 36-2086-3872-5028-7207	DEBUG Attempting to release Resources
+2025-01-07T18:44:13,213  INFO [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.procedure.PkSmsSessionFuncs: 36-2086-3872-5028-7207	DEBUG Procedure execution starts for ApUpdateSessionInfo
+2025-01-07T18:44:13,213  INFO [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.procedure.PkSmsSessionFuncs: 36-2086-3872-5028-7207	INPUT PARAM PiCodSessionId=VFRBTllB114781036750976551108114888343828710473116561101041196161
+2025-01-07T18:44:13,213  INFO [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.procedure.PkSmsSessionFuncs: 36-2086-3872-5028-7207	INPUT PARAM PiCodUserNo=11001183
+2025-01-07T18:44:13,213  INFO [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.procedure.PkSmsSessionFuncs: 36-2086-3872-5028-7207	INPUT PARAM PiCodTermId=10.42.0.1
+2025-01-07T18:44:13,215 DEBUG [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.procedure.PkSmsSessionFuncs: 36-2086-3872-5028-7207	Total time taken byApUpdateSessionInfo. : 2
+2025-01-07T18:44:13,215  INFO [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.procedure.PkSmsSessionFuncs: 36-2086-3872-5028-7207	DEBUG Procedure execution ends for ApUpdateSessionInfo
+2025-01-07T18:44:13,215  INFO [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.procedure.PkSmsSessionFuncs: 36-2086-3872-5028-7207	DEBUG Attempting to release Resources
+2025-01-07T18:44:13,216 DEBUG [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.das.orm.eclipselink.EclipseLinkDataAccessManager: 36-2086-3872-5028-7207	CLEAN UP SESSION
+2025-01-07T18:44:13,216 DEBUG [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.das.orm.eclipselink.EclipseLinkDataAccessManager: 36-2086-3872-5028-7207	CLOSE_FORCE:com.ofss.fc.brn.infra.das.orm.eclipselink.EclipseLinkDataAccessManager:closeSession:257:
+2025-01-07T18:44:13,258  INFO [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.procedure.PkSmsSessionFuncs: 36-2086-3872-6339-6417	DEBUG Procedure execution starts for ApInsertSmsLog
+2025-01-07T18:44:13,258  INFO [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.procedure.PkSmsSessionFuncs: 36-2086-3872-6339-6417	INPUT PARAM PiCodUserNo=11001183
+2025-01-07T18:44:13,258  INFO [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.procedure.PkSmsSessionFuncs: 36-2086-3872-6339-6417	INPUT PARAM PiCodTermId=10.42.0.1
+2025-01-07T18:44:13,258  INFO [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.procedure.PkSmsSessionFuncs: 36-2086-3872-6339-6417	INPUT PARAM PiCodAction=2
+2025-01-07T18:44:13,261 DEBUG [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.procedure.PkSmsSessionFuncs: 36-2086-3872-6339-6417	Total time taken byApInsertSmsLog. : 3
+2025-01-07T18:44:13,261  INFO [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.procedure.PkSmsSessionFuncs: 36-2086-3872-6339-6417	DEBUG Procedure execution ends for ApInsertSmsLog
+2025-01-07T18:44:13,261  INFO [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.procedure.PkSmsSessionFuncs: 36-2086-3872-6339-6417	DEBUG Attempting to release Resources
+2025-01-07T18:44:13,263  INFO [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.procedure.PkSmsSessionFuncs: 36-2086-3872-6339-6417	DEBUG Procedure execution starts for ApFlushSessionTbl
+2025-01-07T18:44:13,263  INFO [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.procedure.PkSmsSessionFuncs: 36-2086-3872-6339-6417	INPUT PARAM PiCodSessionId=VFRBTllB114781036750976551108114888343828710473116561101041196161
+2025-01-07T18:44:13,263  INFO [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.procedure.PkSmsSessionFuncs: 36-2086-3872-6339-6417	INPUT PARAM PiCodUserNo=11001183
+2025-01-07T18:44:13,263  INFO [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.procedure.PkSmsSessionFuncs: 36-2086-3872-6339-6417	INPUT PARAM PiCodTermId=10.42.0.1
+2025-01-07T18:44:13,265 DEBUG [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.procedure.PkSmsSessionFuncs: 36-2086-3872-6339-6417	Total time taken byApFlushSessionTbl. : 2
+2025-01-07T18:44:13,265  INFO [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.procedure.PkSmsSessionFuncs: 36-2086-3872-6339-6417	DEBUG Procedure execution ends for ApFlushSessionTbl
+2025-01-07T18:44:13,266  INFO [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.infra.procedure.PkSmsSessionFuncs: 36-2086-3872-6339-6417	DEBUG Attempting to release Resources
+2025-01-07T18:44:13,266 DEBUG [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.appx.commonservice.core.service.ubs.service.client.proxy.UBSApplicationServiceProxyFacade: 36-2086-3872-6339-6417	 getSessionIdFromHost() Entry
+2025-01-07T18:44:13,266 DEBUG [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.brn.appx.commonservice.core.service.ubs.service.client.proxy.UBSApplicationServiceProxyFacade: 36-2086-3872-6339-6417	{"actionType":"FCCoreSignoff","themeId":null,"userId":"TTANYA"}
+2025-01-07T18:44:13,267 DEBUG [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.app.service.facade.json.client.HttpService: 36-2086-3872-6339-6417	Input data: 
+2025-01-07T18:44:13,267 DEBUG [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.app.service.facade.json.client.HttpService: 36-2086-3872-6339-6417	Content Type: Content-Type: text/html
+2025-01-07T18:44:13,267 DEBUG [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.app.service.facade.json.client.HttpService: 36-2086-3872-6339-6417	Data: java.io.ByteArrayInputStream@3ab54466
+2025-01-07T18:44:13,268 DEBUG [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] 47.com.ofss.fc.app.service.facade.json.client.HttpService: 36-2086-3872-6339-6417	Length: 0
+2025-01-07T18:44:13,268 DEBUG [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.client.protocol.RequestAddCookies: CookieSpec selected: default
+2025-01-07T18:44:13,268 DEBUG [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.client.protocol.RequestAuthCache: Auth cache not set in the context
+2025-01-07T18:44:13,268 DEBUG [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.impl.conn.PoolingHttpClientConnectionManager: Connection request: [route: {s}->https://fcubs-ui.fcubs:7002][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2025-01-07T18:44:13,268 DEBUG [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.impl.conn.PoolingHttpClientConnectionManager: Connection leased: [id: 1][route: {s}->https://fcubs-ui.fcubs:7002][total available: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2025-01-07T18:44:13,268 DEBUG [[ACTIVE] ExecuteThread: '16' for queue: 'weblogic.kernel.Default (self-tuning)'] org.apache.http.impl.execchain.MainClientExec: Opening connection {s}->https://fcubs-ui.fcubs:7002

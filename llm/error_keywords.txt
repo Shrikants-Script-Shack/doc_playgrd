@@ -1,0 +1,89 @@
+Database Errors:
+- Database Error
+- DB Connection Failed
+- SQLSyntaxErrorException
+- Query Timeout Exception
+- JDBC Connection Exception
+- Deadlock Found
+- Foreign Key Constraint Violation
+- Primary Key Violation
+- Transaction Rollback
+- Database Locked
+- ORA-
+- SQLSTATE[HY000]
+
+File & I/O Errors:
+- FileNotFoundException
+- IOError
+- ReadOnlyFileSystem
+- Access Denied
+- Permission Denied
+- No Such File or Directory
+- File is Locked
+- Disk Quota Exceeded
+- File Already Exists
+- Filesystem Corruption
+
+Network & Connectivity Errors:
+- Connection Timeout
+- Network Unreachable
+- SocketException
+- Connection Reset
+- TLS Handshake Failed
+- HTTP 500 Internal Server Error
+- HTTP 403 Forbidden
+- HTTP 404 Not Found
+- DNS Resolution Failed
+- Connection Refused
+
+Memory & Performance Errors:
+- OutOfMemoryError
+- StackOverflowError
+- Heap Space Exhausted
+- GC Overhead Limit Exceeded
+- Too Many Open Files
+- BufferOverflowException
+- ThreadPool Exhausted
+
+Authentication & Security Errors:
+- Authentication Failed
+- Invalid Credentials
+- Unauthorized Access
+- Session Expired
+- Token Expired
+- CSRF Token Mismatch
+- Access Violation
+- SSL Certificate Error
+- Security Exception
+- Invalid API Key
+
+Application & Framework Errors:
+- NullPointerException
+- IllegalArgumentException
+- IndexOutOfBoundsException
+- ClassNotFoundException
+- MethodNotFoundException
+- NoSuchMethodError
+- ModuleNotFoundError
+- Service Unavailable
+- Application Startup Failure
+
+Hardware & System Errors:
+- Kernel Panic
+- Segmentation Fault
+- Invalid Opcode
+- Device Not Ready
+- Hardware Failure
+- CPU Overload
+- Insufficient Disk Space
+- Power Failure Detected
+
+API & Third-Party Errors:
+- Rate Limit Exceeded
+- API Request Failed
+- Invalid API Response
+- Service Unavailable
+- External Dependency Failed
+- Webhook Failure
+- Third-Party Timeout
+
