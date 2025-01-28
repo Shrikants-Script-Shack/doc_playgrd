@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  transinnovate:
+    build: .
+    container_name: transinnovate_app
+    ports:
+      - "8501:8501"  # Streamlit
+      - "5000:5000"  # MLflow UI
+    volumes:
+      - ./IMGBRANOLTP.txt:/app/IMGBRANOLTP.txt
+      - ./error_keywords.txt:/app/error_keywords.txt
+      - ./.env:/app/.env  # Mount the .env file inside the container
+    env_file:
+      - .env  # Load environment variables from .env file
+    restart: always
+    command: ["sh", "-c", "mlflow server --host 0.0.0.0 --port 5000 & sleep 5 && streamlit run dockerapp_key.py --server.port=8501 --server.address=0.0.0.0"]
