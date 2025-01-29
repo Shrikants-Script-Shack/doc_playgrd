@@ -1,38 +1,15 @@
 version: "3.9"
 
 services:
-  # MLflow UI in ephemeral (in-memory) mode
-  mlflow:
-    image: python:3.10-slim
-    container_name: mlflow_server
-    working_dir: /mlflow
-    ports:
-      - "5000:5000"
-    command: >
-      sh -c "apt-get update &&
-      apt-get install -y --no-install-recommends python3-pip curl &&
-      pip install mlflow &&
-      mlflow ui
-        --host 0.0.0.0
-        --port 5000"
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:5000/"]
-      interval: 10s
-      timeout: 5s
-      retries: 3
-
-  # Your Streamlit app
   app:
     build: .
     container_name: transinnovate_app
+    # Map local port 8501 to container's 8501
     ports:
       - "8501:8501"
-    depends_on:
-      mlflow:
-        condition: service_healthy
+    # Mount local folder into the container so you can edit code without rebuild
     volumes:
       - .:/app
+    # Load environment variables (API keys) from .env file
     env_file:
       - .env
-    environment:
-      MLFLOW_TRACKING_URI: "http://mlflow:5000"
