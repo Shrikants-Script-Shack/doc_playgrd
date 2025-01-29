@@ -1,0 +1,910 @@
+2025-01-02T00:02:07,676  WARN [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.AbstractApplication: 22-1566-2421-8443-6745	RESET TRANSACTION STATUS: To save record in pm_outbound_txn_log
+2025-01-02T00:02:07,678 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.obpm.client.ObpmClient: 22-1566-2421-8443-6745	savePaymentOutboundTxnLog : Posting date : null and Value date : null
+2025-01-02T00:02:07,678 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.obpm.client.ObpmClient: 22-1566-2421-8443-6745	Exception from savePaymentOutboundTxnLog
+com.ofss.fc.infra.das.exception.PersistenceException: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateExceptionTranslator.translate(HibernateExceptionTranslator.java:111) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateExceptionTranslator.translate(HibernateExceptionTranslator.java:114) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.openNewSession(HibernateDataAccessManager.java:230) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessor.executeWithImplicitSession(HibernateDataAccessor.java:110) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessor.execute(HibernateDataAccessor.java:93) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.app.obpm.client.ObpmClient.savePaymentOutboundTxnLog(ObpmClient.java:1432) ~[com.custom.payments.ext.jar:?]
+	at com.ofss.fc.app.payments.PaymentServiceHelper.populateAndSavePmOutboundTxnLog(PaymentServiceHelper.java:166) ~[com.custom.payments.ext.jar:?]
+	at com.ofss.fc.api.service.impl.PaymentService.externalSystemAccounting(PaymentService.java:576) ~[_wl_cls_gen.jar:?]
+	at com.ofss.fc.api.controller.impl.PaymentServiceController.externalSystemAccounting(PaymentServiceController.java:73) ~[_wl_cls_gen.jar:?]
+	at sun.reflect.GeneratedMethodAccessor461.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_321]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_321]
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52) ~[org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.serviceImpl(ServletContainer.java:385) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:560) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:501) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:438) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:82) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3866) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3829) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:344) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.security.service.SecurityManager.runAsForUserCode(SecurityManager.java:197) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSecurityProvider.runAsForUserCode(WlsSecurityProvider.java:203) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSubjectHandle.run(WlsSubjectHandle.java:71) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.processSecuredExecute(WebAppServletContext.java:2502) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.doSecuredExecute(WebAppServletContext.java:2351) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2326) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2304) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.runInternal(ServletRequestImpl.java:1779) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1733) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.ContainerSupportProviderImpl$WlsRequestExecutor.run(ContainerSupportProviderImpl.java:272) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager._runAs(ComponentInvocationContextManager.java:352) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager.runAs(ComponentInvocationContextManager.java:337) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.work.LivePartitionUtility.doRunWorkUnderContext(LivePartitionUtility.java:57) [com.oracle.weblogic.work.jar:14.1.1.0]
+	at weblogic.work.PartitionUtility.runWorkUnderContext(PartitionUtility.java:41) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.SelfTuningWorkManagerImpl.runWorkUnderContext(SelfTuningWorkManagerImpl.java:651) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:420) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:360) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+Caused by: org.hibernate.HibernateException: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateConfiguration.getSessionFactory(HibernateConfiguration.java:514) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.getSessionFactory(HibernateDataAccessManager.java:296) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.openNewSession(HibernateDataAccessManager.java:224) ~[com.ofss.fc.infra.jar:?]
+	... 52 more
+Caused by: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	... 1 more
+Caused by: org.hibernate.HibernateException: Unable to instantiate default tuplizer [org.hibernate.tuple.entity.PojoEntityTuplizer]
+	... 1 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 1 more
+Caused by: org.hibernate.PropertyNotFoundException: Could not locate field name [maker] on class [com.ofss.fc.domain.loan.data.MobiculeCashDepositData]
+	... 1 more
+2025-01-02T00:02:07,680 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.payments.PaymentServiceHelper: 22-1566-2421-8443-6745	 savePaymentOutboundTxnLog Exception>>> : [Fatal Error has occurred.Please Exit and Contact System Administrator org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister  ]
+2025-01-02T00:02:07,680 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.: 22-1566-2421-8443-6745	Did you forget to call createTransaction()
+2025-01-02T00:02:07,684  WARN [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.AbstractApplication: 22-1566-2421-9282-3175	RESET TRANSACTION STATUS: To save record in pm_outbound_txn_log
+2025-01-02T00:02:07,685 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.obpm.client.ObpmClient: 22-1566-2421-9282-3175	savePaymentOutboundTxnLog : Posting date : null and Value date : null
+2025-01-02T00:02:07,685 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.obpm.client.ObpmClient: 22-1566-2421-9282-3175	Exception from savePaymentOutboundTxnLog
+com.ofss.fc.infra.das.exception.PersistenceException: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateExceptionTranslator.translate(HibernateExceptionTranslator.java:111) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateExceptionTranslator.translate(HibernateExceptionTranslator.java:114) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.openNewSession(HibernateDataAccessManager.java:230) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessor.executeWithImplicitSession(HibernateDataAccessor.java:110) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessor.execute(HibernateDataAccessor.java:93) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.app.obpm.client.ObpmClient.savePaymentOutboundTxnLog(ObpmClient.java:1432) ~[com.custom.payments.ext.jar:?]
+	at com.ofss.fc.app.payments.PaymentServiceHelper.populateAndSavePmOutboundTxnLog(PaymentServiceHelper.java:166) ~[com.custom.payments.ext.jar:?]
+	at com.ofss.fc.api.service.impl.PaymentService.externalSystemAccounting(PaymentService.java:576) ~[_wl_cls_gen.jar:?]
+	at com.ofss.fc.api.controller.impl.PaymentServiceController.externalSystemAccounting(PaymentServiceController.java:73) ~[_wl_cls_gen.jar:?]
+	at sun.reflect.GeneratedMethodAccessor461.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_321]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_321]
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52) ~[org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.serviceImpl(ServletContainer.java:385) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:560) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:501) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:438) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:82) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3866) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3829) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:344) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.security.service.SecurityManager.runAsForUserCode(SecurityManager.java:197) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSecurityProvider.runAsForUserCode(WlsSecurityProvider.java:203) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSubjectHandle.run(WlsSubjectHandle.java:71) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.processSecuredExecute(WebAppServletContext.java:2502) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.doSecuredExecute(WebAppServletContext.java:2351) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2326) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2304) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.runInternal(ServletRequestImpl.java:1779) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1733) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.ContainerSupportProviderImpl$WlsRequestExecutor.run(ContainerSupportProviderImpl.java:272) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager._runAs(ComponentInvocationContextManager.java:352) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager.runAs(ComponentInvocationContextManager.java:337) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.work.LivePartitionUtility.doRunWorkUnderContext(LivePartitionUtility.java:57) [com.oracle.weblogic.work.jar:14.1.1.0]
+	at weblogic.work.PartitionUtility.runWorkUnderContext(PartitionUtility.java:41) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.SelfTuningWorkManagerImpl.runWorkUnderContext(SelfTuningWorkManagerImpl.java:651) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:420) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:360) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+Caused by: org.hibernate.HibernateException: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateConfiguration.getSessionFactory(HibernateConfiguration.java:514) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.getSessionFactory(HibernateDataAccessManager.java:296) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.openNewSession(HibernateDataAccessManager.java:224) ~[com.ofss.fc.infra.jar:?]
+	... 52 more
+Caused by: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	... 1 more
+Caused by: org.hibernate.HibernateException: Unable to instantiate default tuplizer [org.hibernate.tuple.entity.PojoEntityTuplizer]
+	... 1 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 1 more
+Caused by: org.hibernate.PropertyNotFoundException: Could not locate field name [maker] on class [com.ofss.fc.domain.loan.data.MobiculeCashDepositData]
+	... 1 more
+2025-01-02T00:02:07,686 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.payments.PaymentServiceHelper: 22-1566-2421-9282-3175	 savePaymentOutboundTxnLog Exception>>> : [Fatal Error has occurred.Please Exit and Contact System Administrator org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister  ]
+2025-01-02T00:02:07,686 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.: 22-1566-2421-9282-3175	Did you forget to call createTransaction()
+2025-01-02T00:02:07,689  WARN [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.AbstractApplication: 22-1566-2421-9812-8619	RESET TRANSACTION STATUS: To save record in pm_outbound_txn_log
+2025-01-02T00:02:07,689 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.obpm.client.ObpmClient: 22-1566-2421-9812-8619	savePaymentOutboundTxnLog : Posting date : null and Value date : null
+2025-01-02T00:02:07,689 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.obpm.client.ObpmClient: 22-1566-2421-9812-8619	Exception from savePaymentOutboundTxnLog
+com.ofss.fc.infra.das.exception.PersistenceException: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateExceptionTranslator.translate(HibernateExceptionTranslator.java:111) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateExceptionTranslator.translate(HibernateExceptionTranslator.java:114) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.openNewSession(HibernateDataAccessManager.java:230) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessor.executeWithImplicitSession(HibernateDataAccessor.java:110) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessor.execute(HibernateDataAccessor.java:93) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.app.obpm.client.ObpmClient.savePaymentOutboundTxnLog(ObpmClient.java:1432) ~[com.custom.payments.ext.jar:?]
+	at com.ofss.fc.app.payments.PaymentServiceHelper.populateAndSavePmOutboundTxnLog(PaymentServiceHelper.java:166) ~[com.custom.payments.ext.jar:?]
+	at com.ofss.fc.api.service.impl.PaymentService.externalSystemAccounting(PaymentService.java:576) ~[_wl_cls_gen.jar:?]
+	at com.ofss.fc.api.controller.impl.PaymentServiceController.externalSystemAccounting(PaymentServiceController.java:73) ~[_wl_cls_gen.jar:?]
+	at sun.reflect.GeneratedMethodAccessor461.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_321]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_321]
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52) ~[org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.serviceImpl(ServletContainer.java:385) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:560) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:501) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:438) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:82) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3866) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3829) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:344) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.security.service.SecurityManager.runAsForUserCode(SecurityManager.java:197) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSecurityProvider.runAsForUserCode(WlsSecurityProvider.java:203) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSubjectHandle.run(WlsSubjectHandle.java:71) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.processSecuredExecute(WebAppServletContext.java:2502) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.doSecuredExecute(WebAppServletContext.java:2351) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2326) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2304) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.runInternal(ServletRequestImpl.java:1779) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1733) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.ContainerSupportProviderImpl$WlsRequestExecutor.run(ContainerSupportProviderImpl.java:272) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager._runAs(ComponentInvocationContextManager.java:352) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager.runAs(ComponentInvocationContextManager.java:337) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.work.LivePartitionUtility.doRunWorkUnderContext(LivePartitionUtility.java:57) [com.oracle.weblogic.work.jar:14.1.1.0]
+	at weblogic.work.PartitionUtility.runWorkUnderContext(PartitionUtility.java:41) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.SelfTuningWorkManagerImpl.runWorkUnderContext(SelfTuningWorkManagerImpl.java:651) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:420) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:360) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+Caused by: org.hibernate.HibernateException: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateConfiguration.getSessionFactory(HibernateConfiguration.java:514) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.getSessionFactory(HibernateDataAccessManager.java:296) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.openNewSession(HibernateDataAccessManager.java:224) ~[com.ofss.fc.infra.jar:?]
+	... 52 more
+Caused by: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	... 1 more
+Caused by: org.hibernate.HibernateException: Unable to instantiate default tuplizer [org.hibernate.tuple.entity.PojoEntityTuplizer]
+	... 1 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 1 more
+Caused by: org.hibernate.PropertyNotFoundException: Could not locate field name [maker] on class [com.ofss.fc.domain.loan.data.MobiculeCashDepositData]
+	... 1 more
+2025-01-02T00:02:07,690 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.payments.PaymentServiceHelper: 22-1566-2421-9812-8619	 savePaymentOutboundTxnLog Exception>>> : [Fatal Error has occurred.Please Exit and Contact System Administrator org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister  ]
+2025-01-02T00:02:07,690 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.: 22-1566-2421-9812-8619	Did you forget to call createTransaction()
+2025-01-02T00:02:07,693  WARN [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.AbstractApplication: 22-1566-2422-0208-6882	RESET TRANSACTION STATUS: To save record in pm_outbound_txn_log
+2025-01-02T00:02:07,693 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.obpm.client.ObpmClient: 22-1566-2422-0208-6882	savePaymentOutboundTxnLog : Posting date : null and Value date : null
+2025-01-02T00:02:07,694 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.obpm.client.ObpmClient: 22-1566-2422-0208-6882	Exception from savePaymentOutboundTxnLog
+com.ofss.fc.infra.das.exception.PersistenceException: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateExceptionTranslator.translate(HibernateExceptionTranslator.java:111) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateExceptionTranslator.translate(HibernateExceptionTranslator.java:114) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.openNewSession(HibernateDataAccessManager.java:230) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessor.executeWithImplicitSession(HibernateDataAccessor.java:110) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessor.execute(HibernateDataAccessor.java:93) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.app.obpm.client.ObpmClient.savePaymentOutboundTxnLog(ObpmClient.java:1432) ~[com.custom.payments.ext.jar:?]
+	at com.ofss.fc.app.payments.PaymentServiceHelper.populateAndSavePmOutboundTxnLog(PaymentServiceHelper.java:166) ~[com.custom.payments.ext.jar:?]
+	at com.ofss.fc.api.service.impl.PaymentService.externalSystemAccounting(PaymentService.java:576) ~[_wl_cls_gen.jar:?]
+	at com.ofss.fc.api.controller.impl.PaymentServiceController.externalSystemAccounting(PaymentServiceController.java:73) ~[_wl_cls_gen.jar:?]
+	at sun.reflect.GeneratedMethodAccessor461.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_321]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_321]
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52) ~[org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.serviceImpl(ServletContainer.java:385) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:560) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:501) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:438) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:82) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3866) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3829) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:344) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.security.service.SecurityManager.runAsForUserCode(SecurityManager.java:197) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSecurityProvider.runAsForUserCode(WlsSecurityProvider.java:203) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSubjectHandle.run(WlsSubjectHandle.java:71) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.processSecuredExecute(WebAppServletContext.java:2502) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.doSecuredExecute(WebAppServletContext.java:2351) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2326) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2304) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.runInternal(ServletRequestImpl.java:1779) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1733) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.ContainerSupportProviderImpl$WlsRequestExecutor.run(ContainerSupportProviderImpl.java:272) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager._runAs(ComponentInvocationContextManager.java:352) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager.runAs(ComponentInvocationContextManager.java:337) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.work.LivePartitionUtility.doRunWorkUnderContext(LivePartitionUtility.java:57) [com.oracle.weblogic.work.jar:14.1.1.0]
+	at weblogic.work.PartitionUtility.runWorkUnderContext(PartitionUtility.java:41) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.SelfTuningWorkManagerImpl.runWorkUnderContext(SelfTuningWorkManagerImpl.java:651) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:420) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:360) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+Caused by: org.hibernate.HibernateException: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateConfiguration.getSessionFactory(HibernateConfiguration.java:514) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.getSessionFactory(HibernateDataAccessManager.java:296) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.openNewSession(HibernateDataAccessManager.java:224) ~[com.ofss.fc.infra.jar:?]
+	... 52 more
+Caused by: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	... 1 more
+Caused by: org.hibernate.HibernateException: Unable to instantiate default tuplizer [org.hibernate.tuple.entity.PojoEntityTuplizer]
+	... 1 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 1 more
+Caused by: org.hibernate.PropertyNotFoundException: Could not locate field name [maker] on class [com.ofss.fc.domain.loan.data.MobiculeCashDepositData]
+	... 1 more
+2025-01-02T00:02:07,695 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.payments.PaymentServiceHelper: 22-1566-2422-0208-6882	 savePaymentOutboundTxnLog Exception>>> : [Fatal Error has occurred.Please Exit and Contact System Administrator org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister  ]
+2025-01-02T00:02:07,695 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.: 22-1566-2422-0208-6882	Did you forget to call createTransaction()
+2025-01-02T00:02:07,697  WARN [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.AbstractApplication: 22-1566-2422-0624-1730	RESET TRANSACTION STATUS: To save record in pm_outbound_txn_log
+2025-01-02T00:02:07,698 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.obpm.client.ObpmClient: 22-1566-2422-0624-1730	savePaymentOutboundTxnLog : Posting date : null and Value date : null
+2025-01-02T00:02:07,698 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.obpm.client.ObpmClient: 22-1566-2422-0624-1730	Exception from savePaymentOutboundTxnLog
+com.ofss.fc.infra.das.exception.PersistenceException: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateExceptionTranslator.translate(HibernateExceptionTranslator.java:111) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateExceptionTranslator.translate(HibernateExceptionTranslator.java:114) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.openNewSession(HibernateDataAccessManager.java:230) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessor.executeWithImplicitSession(HibernateDataAccessor.java:110) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessor.execute(HibernateDataAccessor.java:93) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.app.obpm.client.ObpmClient.savePaymentOutboundTxnLog(ObpmClient.java:1432) ~[com.custom.payments.ext.jar:?]
+	at com.ofss.fc.app.payments.PaymentServiceHelper.populateAndSavePmOutboundTxnLog(PaymentServiceHelper.java:166) ~[com.custom.payments.ext.jar:?]
+	at com.ofss.fc.api.service.impl.PaymentService.externalSystemAccounting(PaymentService.java:576) ~[_wl_cls_gen.jar:?]
+	at com.ofss.fc.api.controller.impl.PaymentServiceController.externalSystemAccounting(PaymentServiceController.java:73) ~[_wl_cls_gen.jar:?]
+	at sun.reflect.GeneratedMethodAccessor461.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_321]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_321]
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52) ~[org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.serviceImpl(ServletContainer.java:385) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:560) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:501) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:438) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:82) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3866) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3829) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:344) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.security.service.SecurityManager.runAsForUserCode(SecurityManager.java:197) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSecurityProvider.runAsForUserCode(WlsSecurityProvider.java:203) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSubjectHandle.run(WlsSubjectHandle.java:71) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.processSecuredExecute(WebAppServletContext.java:2502) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.doSecuredExecute(WebAppServletContext.java:2351) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2326) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2304) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.runInternal(ServletRequestImpl.java:1779) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1733) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.ContainerSupportProviderImpl$WlsRequestExecutor.run(ContainerSupportProviderImpl.java:272) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager._runAs(ComponentInvocationContextManager.java:352) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager.runAs(ComponentInvocationContextManager.java:337) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.work.LivePartitionUtility.doRunWorkUnderContext(LivePartitionUtility.java:57) [com.oracle.weblogic.work.jar:14.1.1.0]
+	at weblogic.work.PartitionUtility.runWorkUnderContext(PartitionUtility.java:41) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.SelfTuningWorkManagerImpl.runWorkUnderContext(SelfTuningWorkManagerImpl.java:651) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:420) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:360) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+Caused by: org.hibernate.HibernateException: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateConfiguration.getSessionFactory(HibernateConfiguration.java:514) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.getSessionFactory(HibernateDataAccessManager.java:296) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.openNewSession(HibernateDataAccessManager.java:224) ~[com.ofss.fc.infra.jar:?]
+	... 52 more
+Caused by: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	... 1 more
+Caused by: org.hibernate.HibernateException: Unable to instantiate default tuplizer [org.hibernate.tuple.entity.PojoEntityTuplizer]
+	... 1 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 1 more
+Caused by: org.hibernate.PropertyNotFoundException: Could not locate field name [maker] on class [com.ofss.fc.domain.loan.data.MobiculeCashDepositData]
+	... 1 more
+2025-01-02T00:02:07,700 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.payments.PaymentServiceHelper: 22-1566-2422-0624-1730	 savePaymentOutboundTxnLog Exception>>> : [Fatal Error has occurred.Please Exit and Contact System Administrator org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister  ]
+2025-01-02T00:02:07,700 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.: 22-1566-2422-0624-1730	Did you forget to call createTransaction()
+2025-01-02T00:02:07,716  WARN [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.AbstractApplication: 22-1566-2422-2503-9548	RESET TRANSACTION STATUS: To save record in pm_outbound_txn_log
+2025-01-02T00:02:07,717 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.obpm.client.ObpmClient: 22-1566-2422-2503-9548	savePaymentOutboundTxnLog : Posting date : null and Value date : null
+2025-01-02T00:02:07,717 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.obpm.client.ObpmClient: 22-1566-2422-2503-9548	Exception from savePaymentOutboundTxnLog
+com.ofss.fc.infra.das.exception.PersistenceException: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateExceptionTranslator.translate(HibernateExceptionTranslator.java:111) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateExceptionTranslator.translate(HibernateExceptionTranslator.java:114) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.openNewSession(HibernateDataAccessManager.java:230) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessor.executeWithImplicitSession(HibernateDataAccessor.java:110) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessor.execute(HibernateDataAccessor.java:93) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.app.obpm.client.ObpmClient.savePaymentOutboundTxnLog(ObpmClient.java:1432) ~[com.custom.payments.ext.jar:?]
+	at com.ofss.fc.app.payments.PaymentServiceHelper.populateAndSavePmOutboundTxnLog(PaymentServiceHelper.java:166) ~[com.custom.payments.ext.jar:?]
+	at com.ofss.fc.api.service.impl.PaymentService.externalSystemAccounting(PaymentService.java:576) ~[_wl_cls_gen.jar:?]
+	at com.ofss.fc.api.controller.impl.PaymentServiceController.externalSystemAccounting(PaymentServiceController.java:73) ~[_wl_cls_gen.jar:?]
+	at sun.reflect.GeneratedMethodAccessor461.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_321]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_321]
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52) ~[org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.serviceImpl(ServletContainer.java:385) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:560) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:501) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:438) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:82) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3866) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3829) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:344) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.security.service.SecurityManager.runAsForUserCode(SecurityManager.java:197) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSecurityProvider.runAsForUserCode(WlsSecurityProvider.java:203) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSubjectHandle.run(WlsSubjectHandle.java:71) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.processSecuredExecute(WebAppServletContext.java:2502) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.doSecuredExecute(WebAppServletContext.java:2351) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2326) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2304) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.runInternal(ServletRequestImpl.java:1779) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1733) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.ContainerSupportProviderImpl$WlsRequestExecutor.run(ContainerSupportProviderImpl.java:272) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager._runAs(ComponentInvocationContextManager.java:352) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager.runAs(ComponentInvocationContextManager.java:337) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.work.LivePartitionUtility.doRunWorkUnderContext(LivePartitionUtility.java:57) [com.oracle.weblogic.work.jar:14.1.1.0]
+	at weblogic.work.PartitionUtility.runWorkUnderContext(PartitionUtility.java:41) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.SelfTuningWorkManagerImpl.runWorkUnderContext(SelfTuningWorkManagerImpl.java:651) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:420) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:360) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+Caused by: org.hibernate.HibernateException: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateConfiguration.getSessionFactory(HibernateConfiguration.java:514) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.getSessionFactory(HibernateDataAccessManager.java:296) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.openNewSession(HibernateDataAccessManager.java:224) ~[com.ofss.fc.infra.jar:?]
+	... 52 more
+Caused by: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	... 1 more
+Caused by: org.hibernate.HibernateException: Unable to instantiate default tuplizer [org.hibernate.tuple.entity.PojoEntityTuplizer]
+	... 1 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 1 more
+Caused by: org.hibernate.PropertyNotFoundException: Could not locate field name [maker] on class [com.ofss.fc.domain.loan.data.MobiculeCashDepositData]
+	... 1 more
+2025-01-02T00:02:07,718 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.payments.PaymentServiceHelper: 22-1566-2422-2503-9548	 savePaymentOutboundTxnLog Exception>>> : [Fatal Error has occurred.Please Exit and Contact System Administrator org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister  ]
+2025-01-02T00:02:07,718 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.: 22-1566-2422-2503-9548	Did you forget to call createTransaction()
+2025-01-02T00:02:07,721  WARN [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.AbstractApplication: 22-1566-2422-3028-7524	RESET TRANSACTION STATUS: To save record in pm_outbound_txn_log
+2025-01-02T00:02:07,722 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.obpm.client.ObpmClient: 22-1566-2422-3028-7524	savePaymentOutboundTxnLog : Posting date : null and Value date : null
+2025-01-02T00:02:07,722 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.obpm.client.ObpmClient: 22-1566-2422-3028-7524	Exception from savePaymentOutboundTxnLog
+com.ofss.fc.infra.das.exception.PersistenceException: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateExceptionTranslator.translate(HibernateExceptionTranslator.java:111) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateExceptionTranslator.translate(HibernateExceptionTranslator.java:114) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.openNewSession(HibernateDataAccessManager.java:230) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessor.executeWithImplicitSession(HibernateDataAccessor.java:110) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessor.execute(HibernateDataAccessor.java:93) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.app.obpm.client.ObpmClient.savePaymentOutboundTxnLog(ObpmClient.java:1432) ~[com.custom.payments.ext.jar:?]
+	at com.ofss.fc.app.payments.PaymentServiceHelper.populateAndSavePmOutboundTxnLog(PaymentServiceHelper.java:166) ~[com.custom.payments.ext.jar:?]
+	at com.ofss.fc.api.service.impl.PaymentService.externalSystemAccounting(PaymentService.java:576) ~[_wl_cls_gen.jar:?]
+	at com.ofss.fc.api.controller.impl.PaymentServiceController.externalSystemAccounting(PaymentServiceController.java:73) ~[_wl_cls_gen.jar:?]
+	at sun.reflect.GeneratedMethodAccessor461.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_321]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_321]
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52) ~[org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.serviceImpl(ServletContainer.java:385) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:560) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:501) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:438) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:82) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3866) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3829) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:344) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.security.service.SecurityManager.runAsForUserCode(SecurityManager.java:197) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSecurityProvider.runAsForUserCode(WlsSecurityProvider.java:203) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSubjectHandle.run(WlsSubjectHandle.java:71) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.processSecuredExecute(WebAppServletContext.java:2502) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.doSecuredExecute(WebAppServletContext.java:2351) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2326) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2304) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.runInternal(ServletRequestImpl.java:1779) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1733) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.ContainerSupportProviderImpl$WlsRequestExecutor.run(ContainerSupportProviderImpl.java:272) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager._runAs(ComponentInvocationContextManager.java:352) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager.runAs(ComponentInvocationContextManager.java:337) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.work.LivePartitionUtility.doRunWorkUnderContext(LivePartitionUtility.java:57) [com.oracle.weblogic.work.jar:14.1.1.0]
+	at weblogic.work.PartitionUtility.runWorkUnderContext(PartitionUtility.java:41) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.SelfTuningWorkManagerImpl.runWorkUnderContext(SelfTuningWorkManagerImpl.java:651) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:420) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:360) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+Caused by: org.hibernate.HibernateException: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateConfiguration.getSessionFactory(HibernateConfiguration.java:514) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.getSessionFactory(HibernateDataAccessManager.java:296) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.openNewSession(HibernateDataAccessManager.java:224) ~[com.ofss.fc.infra.jar:?]
+	... 52 more
+Caused by: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	... 1 more
+Caused by: org.hibernate.HibernateException: Unable to instantiate default tuplizer [org.hibernate.tuple.entity.PojoEntityTuplizer]
+	... 1 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 1 more
+Caused by: org.hibernate.PropertyNotFoundException: Could not locate field name [maker] on class [com.ofss.fc.domain.loan.data.MobiculeCashDepositData]
+	... 1 more
+2025-01-02T00:02:07,723 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.payments.PaymentServiceHelper: 22-1566-2422-3028-7524	 savePaymentOutboundTxnLog Exception>>> : [Fatal Error has occurred.Please Exit and Contact System Administrator org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister  ]
+2025-01-02T00:02:07,723 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.: 22-1566-2422-3028-7524	Did you forget to call createTransaction()
+2025-01-02T00:02:07,784  WARN [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.AbstractApplication: 22-1566-2422-9247-8348	RESET TRANSACTION STATUS: To save record in pm_outbound_txn_log
+2025-01-02T00:02:07,784 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.obpm.client.ObpmClient: 22-1566-2422-9247-8348	savePaymentOutboundTxnLog : Posting date : null and Value date : null
+2025-01-02T00:02:07,784 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.obpm.client.ObpmClient: 22-1566-2422-9247-8348	Exception from savePaymentOutboundTxnLog
+com.ofss.fc.infra.das.exception.PersistenceException: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateExceptionTranslator.translate(HibernateExceptionTranslator.java:111) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateExceptionTranslator.translate(HibernateExceptionTranslator.java:114) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.openNewSession(HibernateDataAccessManager.java:230) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessor.executeWithImplicitSession(HibernateDataAccessor.java:110) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessor.execute(HibernateDataAccessor.java:93) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.app.obpm.client.ObpmClient.savePaymentOutboundTxnLog(ObpmClient.java:1432) ~[com.custom.payments.ext.jar:?]
+	at com.ofss.fc.app.payments.PaymentServiceHelper.populateAndSavePmOutboundTxnLog(PaymentServiceHelper.java:166) ~[com.custom.payments.ext.jar:?]
+	at com.ofss.fc.api.service.impl.PaymentService.externalSystemAccounting(PaymentService.java:576) ~[_wl_cls_gen.jar:?]
+	at com.ofss.fc.api.controller.impl.PaymentServiceController.externalSystemAccounting(PaymentServiceController.java:73) ~[_wl_cls_gen.jar:?]
+	at sun.reflect.GeneratedMethodAccessor461.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_321]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_321]
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52) ~[org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.serviceImpl(ServletContainer.java:385) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:560) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:501) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:438) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:82) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3866) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3829) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:344) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.security.service.SecurityManager.runAsForUserCode(SecurityManager.java:197) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSecurityProvider.runAsForUserCode(WlsSecurityProvider.java:203) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSubjectHandle.run(WlsSubjectHandle.java:71) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.processSecuredExecute(WebAppServletContext.java:2502) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.doSecuredExecute(WebAppServletContext.java:2351) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2326) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2304) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.runInternal(ServletRequestImpl.java:1779) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1733) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.ContainerSupportProviderImpl$WlsRequestExecutor.run(ContainerSupportProviderImpl.java:272) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager._runAs(ComponentInvocationContextManager.java:352) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager.runAs(ComponentInvocationContextManager.java:337) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.work.LivePartitionUtility.doRunWorkUnderContext(LivePartitionUtility.java:57) [com.oracle.weblogic.work.jar:14.1.1.0]
+	at weblogic.work.PartitionUtility.runWorkUnderContext(PartitionUtility.java:41) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.SelfTuningWorkManagerImpl.runWorkUnderContext(SelfTuningWorkManagerImpl.java:651) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:420) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:360) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+Caused by: org.hibernate.HibernateException: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateConfiguration.getSessionFactory(HibernateConfiguration.java:514) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.getSessionFactory(HibernateDataAccessManager.java:296) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.openNewSession(HibernateDataAccessManager.java:224) ~[com.ofss.fc.infra.jar:?]
+	... 52 more
+Caused by: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	... 1 more
+Caused by: org.hibernate.HibernateException: Unable to instantiate default tuplizer [org.hibernate.tuple.entity.PojoEntityTuplizer]
+	... 1 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 1 more
+Caused by: org.hibernate.PropertyNotFoundException: Could not locate field name [maker] on class [com.ofss.fc.domain.loan.data.MobiculeCashDepositData]
+	... 1 more
+2025-01-02T00:02:07,786 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.payments.PaymentServiceHelper: 22-1566-2422-9247-8348	 savePaymentOutboundTxnLog Exception>>> : [Fatal Error has occurred.Please Exit and Contact System Administrator org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister  ]
+2025-01-02T00:02:07,786 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.: 22-1566-2422-9247-8348	Did you forget to call createTransaction()
+2025-01-02T00:02:07,789  WARN [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.AbstractApplication: 22-1566-2422-9796-5719	RESET TRANSACTION STATUS: To save record in pm_outbound_txn_log
+2025-01-02T00:02:07,789 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.obpm.client.ObpmClient: 22-1566-2422-9796-5719	savePaymentOutboundTxnLog : Posting date : null and Value date : null
+2025-01-02T00:02:07,789 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.obpm.client.ObpmClient: 22-1566-2422-9796-5719	Exception from savePaymentOutboundTxnLog
+com.ofss.fc.infra.das.exception.PersistenceException: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateExceptionTranslator.translate(HibernateExceptionTranslator.java:111) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateExceptionTranslator.translate(HibernateExceptionTranslator.java:114) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.openNewSession(HibernateDataAccessManager.java:230) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessor.executeWithImplicitSession(HibernateDataAccessor.java:110) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessor.execute(HibernateDataAccessor.java:93) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.app.obpm.client.ObpmClient.savePaymentOutboundTxnLog(ObpmClient.java:1432) ~[com.custom.payments.ext.jar:?]
+	at com.ofss.fc.app.payments.PaymentServiceHelper.populateAndSavePmOutboundTxnLog(PaymentServiceHelper.java:166) ~[com.custom.payments.ext.jar:?]
+	at com.ofss.fc.api.service.impl.PaymentService.externalSystemAccounting(PaymentService.java:576) ~[_wl_cls_gen.jar:?]
+	at com.ofss.fc.api.controller.impl.PaymentServiceController.externalSystemAccounting(PaymentServiceController.java:73) ~[_wl_cls_gen.jar:?]
+	at sun.reflect.GeneratedMethodAccessor461.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_321]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_321]
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52) ~[org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.serviceImpl(ServletContainer.java:385) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:560) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:501) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:438) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:82) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3866) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3829) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:344) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.security.service.SecurityManager.runAsForUserCode(SecurityManager.java:197) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSecurityProvider.runAsForUserCode(WlsSecurityProvider.java:203) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSubjectHandle.run(WlsSubjectHandle.java:71) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.processSecuredExecute(WebAppServletContext.java:2502) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.doSecuredExecute(WebAppServletContext.java:2351) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2326) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2304) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.runInternal(ServletRequestImpl.java:1779) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1733) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.ContainerSupportProviderImpl$WlsRequestExecutor.run(ContainerSupportProviderImpl.java:272) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager._runAs(ComponentInvocationContextManager.java:352) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager.runAs(ComponentInvocationContextManager.java:337) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.work.LivePartitionUtility.doRunWorkUnderContext(LivePartitionUtility.java:57) [com.oracle.weblogic.work.jar:14.1.1.0]
+	at weblogic.work.PartitionUtility.runWorkUnderContext(PartitionUtility.java:41) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.SelfTuningWorkManagerImpl.runWorkUnderContext(SelfTuningWorkManagerImpl.java:651) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:420) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:360) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+Caused by: org.hibernate.HibernateException: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateConfiguration.getSessionFactory(HibernateConfiguration.java:514) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.getSessionFactory(HibernateDataAccessManager.java:296) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.openNewSession(HibernateDataAccessManager.java:224) ~[com.ofss.fc.infra.jar:?]
+	... 52 more
+Caused by: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	... 1 more
+Caused by: org.hibernate.HibernateException: Unable to instantiate default tuplizer [org.hibernate.tuple.entity.PojoEntityTuplizer]
+	... 1 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 1 more
+Caused by: org.hibernate.PropertyNotFoundException: Could not locate field name [maker] on class [com.ofss.fc.domain.loan.data.MobiculeCashDepositData]
+	... 1 more
+2025-01-02T00:02:07,791 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.payments.PaymentServiceHelper: 22-1566-2422-9796-5719	 savePaymentOutboundTxnLog Exception>>> : [Fatal Error has occurred.Please Exit and Contact System Administrator org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister  ]
+2025-01-02T00:02:07,791 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.: 22-1566-2422-9796-5719	Did you forget to call createTransaction()
+2025-01-02T00:02:07,918  WARN [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.AbstractApplication: 22-1566-2424-2625-1398	RESET TRANSACTION STATUS: To save record in pm_outbound_txn_log
+2025-01-02T00:02:07,918 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.obpm.client.ObpmClient: 22-1566-2424-2625-1398	savePaymentOutboundTxnLog : Posting date : null and Value date : null
+2025-01-02T00:02:07,918 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.obpm.client.ObpmClient: 22-1566-2424-2625-1398	Exception from savePaymentOutboundTxnLog
+com.ofss.fc.infra.das.exception.PersistenceException: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateExceptionTranslator.translate(HibernateExceptionTranslator.java:111) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateExceptionTranslator.translate(HibernateExceptionTranslator.java:114) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.openNewSession(HibernateDataAccessManager.java:230) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessor.executeWithImplicitSession(HibernateDataAccessor.java:110) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessor.execute(HibernateDataAccessor.java:93) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.app.obpm.client.ObpmClient.savePaymentOutboundTxnLog(ObpmClient.java:1432) ~[com.custom.payments.ext.jar:?]
+	at com.ofss.fc.app.payments.PaymentServiceHelper.populateAndSavePmOutboundTxnLog(PaymentServiceHelper.java:166) ~[com.custom.payments.ext.jar:?]
+	at com.ofss.fc.api.service.impl.PaymentService.externalSystemAccounting(PaymentService.java:576) ~[_wl_cls_gen.jar:?]
+	at com.ofss.fc.api.controller.impl.PaymentServiceController.externalSystemAccounting(PaymentServiceController.java:73) ~[_wl_cls_gen.jar:?]
+	at sun.reflect.GeneratedMethodAccessor461.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_321]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_321]
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52) ~[org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.serviceImpl(ServletContainer.java:385) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:560) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:501) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:438) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:82) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3866) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3829) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:344) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.security.service.SecurityManager.runAsForUserCode(SecurityManager.java:197) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSecurityProvider.runAsForUserCode(WlsSecurityProvider.java:203) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSubjectHandle.run(WlsSubjectHandle.java:71) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.processSecuredExecute(WebAppServletContext.java:2502) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.doSecuredExecute(WebAppServletContext.java:2351) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2326) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2304) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.runInternal(ServletRequestImpl.java:1779) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1733) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.ContainerSupportProviderImpl$WlsRequestExecutor.run(ContainerSupportProviderImpl.java:272) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager._runAs(ComponentInvocationContextManager.java:352) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager.runAs(ComponentInvocationContextManager.java:337) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.work.LivePartitionUtility.doRunWorkUnderContext(LivePartitionUtility.java:57) [com.oracle.weblogic.work.jar:14.1.1.0]
+	at weblogic.work.PartitionUtility.runWorkUnderContext(PartitionUtility.java:41) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.SelfTuningWorkManagerImpl.runWorkUnderContext(SelfTuningWorkManagerImpl.java:651) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:420) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:360) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+Caused by: org.hibernate.HibernateException: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateConfiguration.getSessionFactory(HibernateConfiguration.java:514) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.getSessionFactory(HibernateDataAccessManager.java:296) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.openNewSession(HibernateDataAccessManager.java:224) ~[com.ofss.fc.infra.jar:?]
+	... 52 more
+Caused by: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	... 1 more
+Caused by: org.hibernate.HibernateException: Unable to instantiate default tuplizer [org.hibernate.tuple.entity.PojoEntityTuplizer]
+	... 1 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 1 more
+Caused by: org.hibernate.PropertyNotFoundException: Could not locate field name [maker] on class [com.ofss.fc.domain.loan.data.MobiculeCashDepositData]
+	... 1 more
+2025-01-02T00:02:07,920 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.payments.PaymentServiceHelper: 22-1566-2424-2625-1398	 savePaymentOutboundTxnLog Exception>>> : [Fatal Error has occurred.Please Exit and Contact System Administrator org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister  ]
+2025-01-02T00:02:07,920 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.: 22-1566-2424-2625-1398	Did you forget to call createTransaction()
+2025-01-02T00:02:07,965  WARN [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.AbstractApplication: 22-1566-2424-7380-4362	RESET TRANSACTION STATUS: To save record in pm_outbound_txn_log
+2025-01-02T00:02:07,965 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.obpm.client.ObpmClient: 22-1566-2424-7380-4362	savePaymentOutboundTxnLog : Posting date : null and Value date : null
+2025-01-02T00:02:07,966 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.obpm.client.ObpmClient: 22-1566-2424-7380-4362	Exception from savePaymentOutboundTxnLog
+com.ofss.fc.infra.das.exception.PersistenceException: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateExceptionTranslator.translate(HibernateExceptionTranslator.java:111) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateExceptionTranslator.translate(HibernateExceptionTranslator.java:114) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.openNewSession(HibernateDataAccessManager.java:230) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessor.executeWithImplicitSession(HibernateDataAccessor.java:110) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessor.execute(HibernateDataAccessor.java:93) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.app.obpm.client.ObpmClient.savePaymentOutboundTxnLog(ObpmClient.java:1432) ~[com.custom.payments.ext.jar:?]
+	at com.ofss.fc.app.payments.PaymentServiceHelper.populateAndSavePmOutboundTxnLog(PaymentServiceHelper.java:166) ~[com.custom.payments.ext.jar:?]
+	at com.ofss.fc.api.service.impl.PaymentService.externalSystemAccounting(PaymentService.java:576) ~[_wl_cls_gen.jar:?]
+	at com.ofss.fc.api.controller.impl.PaymentServiceController.externalSystemAccounting(PaymentServiceController.java:73) ~[_wl_cls_gen.jar:?]
+	at sun.reflect.GeneratedMethodAccessor461.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_321]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_321]
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52) ~[org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265) [org.glassfish.jersey.core.jersey-common.jar:?]
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680) [org.glassfish.jersey.core.jersey-server.jar:?]
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.serviceImpl(ServletContainer.java:385) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:560) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:501) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:438) [org.glassfish.jersey.containers.jersey-container-servlet-core.jar:?]
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:82) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3866) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3829) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:344) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.security.service.SecurityManager.runAsForUserCode(SecurityManager.java:197) [com.oracle.weblogic.security.subject.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSecurityProvider.runAsForUserCode(WlsSecurityProvider.java:203) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.WlsSubjectHandle.run(WlsSubjectHandle.java:71) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.processSecuredExecute(WebAppServletContext.java:2502) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.doSecuredExecute(WebAppServletContext.java:2351) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2326) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2304) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.runInternal(ServletRequestImpl.java:1779) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1733) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.servlet.provider.ContainerSupportProviderImpl$WlsRequestExecutor.run(ContainerSupportProviderImpl.java:272) [com.oracle.weblogic.servlet.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager._runAs(ComponentInvocationContextManager.java:352) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.invocation.ComponentInvocationContextManager.runAs(ComponentInvocationContextManager.java:337) [com.bea.core.utils.full.jar:14.1.1.0]
+	at weblogic.work.LivePartitionUtility.doRunWorkUnderContext(LivePartitionUtility.java:57) [com.oracle.weblogic.work.jar:14.1.1.0]
+	at weblogic.work.PartitionUtility.runWorkUnderContext(PartitionUtility.java:41) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.SelfTuningWorkManagerImpl.runWorkUnderContext(SelfTuningWorkManagerImpl.java:651) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:420) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:360) [com.bea.core.weblogic.workmanager.jar:14.1.1.0]
+Caused by: org.hibernate.HibernateException: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateConfiguration.getSessionFactory(HibernateConfiguration.java:514) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.getSessionFactory(HibernateDataAccessManager.java:296) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager.openNewSession(HibernateDataAccessManager.java:224) ~[com.ofss.fc.infra.jar:?]
+	... 52 more
+Caused by: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	... 1 more
+Caused by: org.hibernate.HibernateException: Unable to instantiate default tuplizer [org.hibernate.tuple.entity.PojoEntityTuplizer]
+	... 1 more
+Caused by: java.lang.reflect.InvocationTargetException
+	... 1 more
+Caused by: org.hibernate.PropertyNotFoundException: Could not locate field name [maker] on class [com.ofss.fc.domain.loan.data.MobiculeCashDepositData]
+	... 1 more
+2025-01-02T00:02:07,968 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.app.payments.PaymentServiceHelper: 22-1566-2424-7380-4362	 savePaymentOutboundTxnLog Exception>>> : [Fatal Error has occurred.Please Exit and Contact System Administrator org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister  ]
+2025-01-02T00:02:07,968 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.: 22-1566-2424-7380-4362	Did you forget to call createTransaction()
+2025-01-02T09:56:23,432 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.host.api.nh.listener.APIListener: 22-1601-8979-4245-2172	******Branch Application -> Entered HTTPListener******
+2025-01-02T09:56:23,434  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 235.com.ofss.fc.host.api.nh.listener.APIListener: 22-1601-8979-4245-2172	Start of HTTPListener doPost method.
+2025-01-02T09:56:23,452 DEBUG [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.apiauditforjson: 22-1601-8979-4245-2172	Request String: {"Request":{"Service":"SessionIdGeneratorManagerService","Operation":"genUserSessionId()","TxnData":{"UserId":"TCHINU"}}}
+2025-01-02T09:56:23,452 DEBUG [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.app.session.service.json.SessionIdGenerationManagerJSONFacade: 22-1601-8979-4245-2172	Process() Entry
+2025-01-02T09:56:23,453 DEBUG [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.app.session.service.json.SessionIdGenerationManagerJSONFacade: 22-1601-8979-4245-2172	Process() Exit
+2025-01-02T09:56:23,454 DEBUG [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.apiauditforjson: 22-1601-8979-4245-2172	Response String  Mnt action z : {"SessionId":"VENISU5V537282698649103851017510681105481226776716582861036161"}
+2025-01-02T09:56:23,454  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.app.service.facade.json.JSONServiceMap: 22-1601-8979-4245-2172	Entered into isModifiedFieldsFlagSet
+2025-01-02T09:56:23,454  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.app.service.facade.json.JSONServiceMap: 22-1601-8979-4245-2172	isModifiedFieldsFlagSet.flagEnabled : Y
+2025-01-02T09:56:23,454  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.branch.service.api.ServiceManager: 22-1601-8979-4245-2172	FCR_ENABLE_MNT_MODIFIED_FIELDS : Y
+2025-01-02T09:56:23,454  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.app.service.facade.json.JSONServiceMap: 22-1601-8979-4245-2172	Entered into isModifiedFieldsFunctionalitySupported
+2025-01-02T09:56:23,454  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.app.service.facade.json.JSONServiceMap: 22-1601-8979-4245-2172	isModifiedFieldsFunctionalitySupported.fieldEnabled : true
+2025-01-02T09:56:23,454  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.branch.service.api.ServiceManager: 22-1601-8979-4245-2172	service : true
+2025-01-02T09:56:23,454  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.app.service.facade.json.JSONServiceMap: 22-1601-8979-4245-2172	Entered into isModifiedFieldsFlagSet
+2025-01-02T09:56:23,454  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.app.service.facade.json.JSONServiceMap: 22-1601-8979-4245-2172	isModifiedFieldsFlagSet.flagEnabled : Y
+2025-01-02T09:56:23,454  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.app.service.facade.json.JSONServiceMap: 22-1601-8979-4245-2172	Entered into isModifiedFieldsFunctionalitySupported
+2025-01-02T09:56:23,454  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.app.service.facade.json.JSONServiceMap: 22-1601-8979-4245-2172	isModifiedFieldsFunctionalitySupported.fieldEnabled : true
+2025-01-02T09:56:23,454  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.branch.service.api.ServiceManager: 22-1601-8979-4245-2172	Entered into if condition of processJSONRequest.
+2025-01-02T09:56:23,454  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.app.service.facade.json.JSONServiceMap: 22-1601-8979-4245-2172	Entered into isModifiedFieldsFunctionalitySupported
+2025-01-02T09:56:23,454  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.app.service.facade.json.JSONServiceMap: 22-1601-8979-4245-2172	isModifiedFieldsFunctionalitySupported.fieldEnabled : false
+2025-01-02T09:56:23,454  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.branch.service.api.ServiceManager: 22-1601-8979-4245-2172	getJSONDiffAuthRecord.Response : {}
+2025-01-02T09:56:23,454  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.branch.service.api.ServiceManager: 22-1601-8979-4245-2172	ModResponse : {}
+2025-01-02T09:56:23,458 DEBUG [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.fcrjhttp: 22-1601-8979-4245-2172	PerfTest [JVM Name: null], [ComponentName:com.ofss.fc.host.api.nh.listener.APIListener] [StartTime:2025-01-02 09:56:23.434],[EndTime:2025-01-02 09:56:23.458],[Total time taken by[HTTPListener doPost method],[24 ms]],[RequestString:{"Request":{"Service":"SessionIdGeneratorManagerService","Operation":"genUserSessionId()","TxnData":{"UserId":"TCHINU"}}}]
+2025-01-02T09:56:23,459 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] httptime: 22-1601-8979-6877-4313	Total time taken : 25 ms
+2025-01-02T09:57:06,652 DEBUG [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.apiauditforjson: 22-1601-8979-6877-4313	Request String: {"Request":{"Service":"SessionIdGeneratorManagerService","Operation":"genUserSessionId()","TxnData":{"UserId":"TCHINU"}}}
+2025-01-02T09:57:06,653 DEBUG [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.app.session.service.json.SessionIdGenerationManagerJSONFacade: 22-1601-8979-6877-4313	Process() Entry
+2025-01-02T09:57:06,653 DEBUG [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.app.session.service.json.SessionIdGenerationManagerJSONFacade: 22-1601-8979-6877-4313	Process() Exit
+2025-01-02T09:57:06,653 DEBUG [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.apiauditforjson: 22-1601-8979-6877-4313	Response String  Mnt action z : {"SessionId":"VENISU5V739990655766491131049710510975491071185285701041081196161"}
+2025-01-02T09:57:06,653  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.app.service.facade.json.JSONServiceMap: 22-1601-8979-6877-4313	Entered into isModifiedFieldsFlagSet
+2025-01-02T09:57:06,653  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.app.service.facade.json.JSONServiceMap: 22-1601-8979-6877-4313	isModifiedFieldsFlagSet.flagEnabled : Y
+2025-01-02T09:57:06,653  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.branch.service.api.ServiceManager: 22-1601-8979-6877-4313	FCR_ENABLE_MNT_MODIFIED_FIELDS : Y
+2025-01-02T09:57:06,653  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.app.service.facade.json.JSONServiceMap: 22-1601-8979-6877-4313	Entered into isModifiedFieldsFunctionalitySupported
+2025-01-02T09:57:06,653  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.app.service.facade.json.JSONServiceMap: 22-1601-8979-6877-4313	isModifiedFieldsFunctionalitySupported.fieldEnabled : true
+2025-01-02T09:57:06,653  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.branch.service.api.ServiceManager: 22-1601-8979-6877-4313	service : true
+2025-01-02T09:57:06,653  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.app.service.facade.json.JSONServiceMap: 22-1601-8979-6877-4313	Entered into isModifiedFieldsFlagSet
+2025-01-02T09:57:06,653  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.app.service.facade.json.JSONServiceMap: 22-1601-8979-6877-4313	isModifiedFieldsFlagSet.flagEnabled : Y
+2025-01-02T09:57:06,653  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.app.service.facade.json.JSONServiceMap: 22-1601-8979-6877-4313	Entered into isModifiedFieldsFunctionalitySupported
+2025-01-02T09:57:06,653  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.app.service.facade.json.JSONServiceMap: 22-1601-8979-6877-4313	isModifiedFieldsFunctionalitySupported.fieldEnabled : true
+2025-01-02T09:57:06,653  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.branch.service.api.ServiceManager: 22-1601-8979-6877-4313	Entered into if condition of processJSONRequest.
+2025-01-02T09:57:06,653  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.app.service.facade.json.JSONServiceMap: 22-1601-8979-6877-4313	Entered into isModifiedFieldsFunctionalitySupported
+2025-01-02T09:57:06,653  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.app.service.facade.json.JSONServiceMap: 22-1601-8979-6877-4313	isModifiedFieldsFunctionalitySupported.fieldEnabled : false
+2025-01-02T09:57:06,653  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.branch.service.api.ServiceManager: 22-1601-8979-6877-4313	getJSONDiffAuthRecord.Response : {}
+2025-01-02T09:57:06,653  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.branch.service.api.ServiceManager: 22-1601-8979-6877-4313	ModResponse : {}
+2025-01-02T09:57:06,653 DEBUG [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.fcrjhttp: 22-1601-8979-6877-4313	PerfTest [JVM Name: null], [ComponentName:com.ofss.fc.host.api.nh.listener.APIListener] [StartTime:2025-01-02 09:57:06.652],[EndTime:2025-01-02 09:57:06.653],[Total time taken by[HTTPListener doPost method],[1 ms]],[RequestString:{"Request":{"Service":"SessionIdGeneratorManagerService","Operation":"genUserSessionId()","TxnData":{"UserId":"TCHINU"}}}]
+2025-01-02T09:57:06,653 FATAL [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] httptime: 22-1601-9411-6354-7091	Total time taken : 1 ms
+2025-01-02T09:57:07,133 DEBUG [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.apiauditforjson: 22-1601-9411-6354-7091	Request String: {"Request":{"Service":"LOVManagerService","SessionContext":{},"Operation":"","TxnData":{"RG":{"TaskCode":"0","ID":"GetCurrencyConfig","LoCode":"1","bindParams":{},"BranchCode":"41"}}}}
+2025-01-02T09:57:07,133 DEBUG [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.apiauditforjson: 22-1601-9411-6354-7091	Process() Entry
+2025-01-02T09:57:07,133  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.apiauditforjson: 22-1601-9411-6354-7091	Start of Thread Id : [ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'
+2025-01-02T09:57:07,133 DEBUG [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.apiauditforjson: 22-1601-9411-6354-7091	fetchRecords() Entry
+2025-01-02T09:57:07,135  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.branch.lov.LOVManager: 22-1601-9411-6354-7091	Start of Parsing the QryStore.XML
+2025-01-02T09:57:07,169  INFO [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.branch.lov.LOVManager: 22-1601-9411-6354-7091	Loading the queries to HashMap
+2025-01-02T09:57:07,174 DEBUG [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.branch.lov.LOVManager: 22-1601-9411-6354-7091	Query Id :QRY_NARRATION is added
+2025-01-02T09:57:07,174 DEBUG [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.branch.lov.LOVManager: 22-1601-9411-6354-7091	QRY_NARRATION-->SELECT macro_value "MacroValue" FROM ba_site
+			WHERE macro_name = CAST(:macroName AS VARCHAR2(45))
+		
+2025-01-02T09:57:07,175 DEBUG [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.branch.lov.LOVManager: 22-1601-9411-6354-7091	Query Id :QRYCHM36_INQ is added
+2025-01-02T09:57:07,175 DEBUG [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.branch.lov.LOVManager: 22-1601-9411-6354-7091	QRYCHM36_INQ-->SELECT A.cod_acct_no "AccountNumber",B.NAM_CUST_SHRT
+			"CustomerName",A.ctr_acct_adrs "SerialNo"
+			FROM ch_acct_adrs A, ch_acct_mast B
+			WHERE A.flg_mnt_status = 'A'
+			AND B.flg_mnt_status ='A'
+			AND A.cod_acct_no = B.cod_acct_no
+			ORDER BY A.cod_acct_no, A.ctr_acct_adrs
+		
+2025-01-02T09:57:07,175 DEBUG [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.branch.lov.LOVManager: 22-1601-9411-6354-7091	Query Id :RecordGroup is added
+2025-01-02T09:57:07,175 DEBUG [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.branch.lov.LOVManager: 22-1601-9411-6354-7091	RecordGroup-->
+		
+2025-01-02T09:57:07,175 DEBUG [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.branch.lov.LOVManager: 22-1601-9411-6354-7091	Query Id :GETBRANCH is added
+2025-01-02T09:57:07,175 DEBUG [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.branch.lov.LOVManager: 22-1601-9411-6354-7091	GETBRANCH-->SELECT cod_cc_brn "BranchCode",
+			nam_branch_shrt "BranchName"
+			FROM ba_cc_brn_mast
+			WHERE flg_mnt_status = 'A'
+			ORDER BY
+			cod_cc_brn
+		
+2025-01-02T09:57:07,175 DEBUG [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.branch.lov.LOVManager: 22-1601-9411-6354-7091	Query Id :QRYCHM36_AMD is added
+2025-01-02T09:57:07,175 DEBUG [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.branch.lov.LOVManager: 22-1601-9411-6354-7091	QRYCHM36_AMD-->SELECT A.cod_acct_no "AccountNumber",B.NAM_CUST_SHRT
+			"CustomerName",A.ctr_acct_adrs "SerialNo"
+			FROM ch_acct_adrs A, ch_acct_mast B
+			WHERE A.flg_mnt_status = 'U'
+			AND B.flg_mnt_status ='A'
+			AND A.cod_acct_no = B.cod_acct_no
+			AND A.cod_last_mnt_makerid = :makerID
+			ORDER BY A.cod_acct_no, A.ctr_acct_adrs
+		
+2025-01-02T09:57:07,175 DEBUG [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.branch.lov.LOVManager: 22-1601-9411-6354-7091	Query Id :QRYCHM36_CAN is added
+2025-01-02T09:57:07,175 DEBUG [[ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)'] 11.com.ofss.fc.branch.lov.LOVManager: 22-1601-9411-6354-7091	QRYCHM36_CAN-->SELECT A.cod_acct_no "AccountNumber",E.NAM_CUST_SHRT
+			"CustomerName",A.ctr_acct_adrs "SerialNo"
+
+			FROM ch_acct_adrs A, ch_acct_mast E ,ba_cc_brn_mast B , sm_user_profile
+			C, sm_temp_profile D
+			WHERE
+			A.flg_mnt_status = 'U'
+			AND A.cod_acct_no = E.cod_acct_no
+			AND C.cod_host_templ = D.cod_user_templ
+
+			AND C.FLG_MNT_STATUS='A'

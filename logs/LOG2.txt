@@ -1,0 +1,219 @@
+2025-01-06T10:54:35,890 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->     database type: oracle
+2025-01-06T10:54:35,890 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->   setSessionId()  [NO ACTION]  Exit:
+2025-01-06T10:54:35,890 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->     openConnection() Exit:
+2025-01-06T10:54:35,890  INFO [Timer-27] 235.com.ofss.fc.alert.poller.PostponedAlertProcessor: 150-1950-6303-9894-8621	POSTPONEDALERT_LOG_FETCH_LOCK acquire 150 enter .
+2025-01-06T10:54:35,890 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->inside openConnection() Entity Code is :235
+2025-01-06T10:54:35,890 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->Else :true
+2025-01-06T10:54:35,890 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->     database name: Oracle
+2025-01-06T10:54:35,890 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->     database type: oracle
+2025-01-06T10:54:35,890 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->   setSessionId()  [NO ACTION]  Exit:
+2025-01-06T10:54:35,890 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->     openConnection() Exit:
+2025-01-06T10:54:35,892 DEBUG [Timer-27] 235.com.ofss.fc.alert.poller.PostponedAlertProcessor: 150-1950-6303-9894-8621	LOCK ACQUIRED
+2025-01-06T10:54:35,898 DEBUG [Timer-27] 235.com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager: 150-1950-6303-9894-8621	CLOSE_FORCE:com.ofss.fc.infra.lock.CentralDistributedLock:release:251:
+2025-01-06T10:54:35,898 DEBUG [Timer-27] 235.com.ofss.fc.alert.poller.PostponedAlertProcessor: 150-1950-6303-9894-8621	lock released finally ....
+2025-01-06T10:54:35,898 DEBUG [Timer-27] 235.com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager: 150-1950-6303-9894-8621	CLOSE_FORCE:com.ofss.fc.alert.poller.PostponedAlertProcessor:run:167:
+2025-01-06T10:54:36,139 DEBUG [Timer-27] 235.com.ofss.fc.alert.poller.OnlineEventPoller: 150-1950-6303-9894-8621	Event Poller Thread Timestamp : Mon Jan 06 10:54:36 IST 2025
+2025-01-06T10:54:36,139 DEBUG [Timer-27] 235.com.ofss.fc.alert.poller.OnlineEventPoller: 150-1950-6303-9894-8621	Publishing for entityCode 235
+2025-01-06T10:54:36,139 DEBUG [Timer-27] 235.com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager: 150-1950-6303-9894-8621	OPEN_NEW:com.ofss.fc.alert.poller.EventPoller:startPublishing:142:
+2025-01-06T10:54:36,139 DEBUG [Timer-27] 235.com.ofss.fc.alert.poller.OnlineEventPoller: 150-1950-6303-9894-8621	ALERT_LOG_FETCH_LOCK acquire 150 enter .
+2025-01-06T10:54:36,139 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->inside openConnection() Entity Code is :235
+2025-01-06T10:54:36,139 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->Else :true
+2025-01-06T10:54:36,139 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->     database name: Oracle
+2025-01-06T10:54:36,139 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->     database type: oracle
+2025-01-06T10:54:36,139 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->   setSessionId()  [NO ACTION]  Exit:
+2025-01-06T10:54:36,139 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->     openConnection() Exit:
+2025-01-06T10:54:36,141 DEBUG [Timer-27] 235.com.ofss.fc.alert.poller.OnlineEventPoller: 150-1950-6303-9894-8621	LOCK ACQUIRED
+2025-01-06T10:54:36,141 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->inside openConnection() Entity Code is :235
+2025-01-06T10:54:36,141 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->Else :true
+2025-01-06T10:54:36,141 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->     database name: Oracle
+2025-01-06T10:54:36,141 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->     database type: oracle
+2025-01-06T10:54:36,141 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->   setSessionId()  [NO ACTION]  Exit:
+2025-01-06T10:54:36,141 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->     openConnection() Exit:
+2025-01-06T10:54:36,144 DEBUG [Timer-27] 235.com.ofss.fc.alert.poller.OnlineEventPoller: 150-1950-6303-9894-8621	eventLogger List 1 : 0
+2025-01-06T10:54:36,146 DEBUG [Timer-27] 235.com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager: 150-1950-6303-9894-8621	CLOSE_FORCE:com.ofss.fc.infra.lock.CentralDistributedLock:release:251:
+2025-01-06T10:54:36,146 DEBUG [Timer-27] 235.com.ofss.fc.alert.poller.OnlineEventPoller: 150-1950-6303-9894-8621	lock released....
+2025-01-06T10:54:36,146 DEBUG [Timer-27] 235.com.ofss.fc.alert.poller.OnlineEventPoller: 150-1950-6303-9894-8621	eventLogger List 2 : 0
+2025-01-06T10:54:36,146 DEBUG [Timer-27] 235.com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager: 150-1950-6303-9894-8621	CLOSE_FORCE:com.ofss.fc.alert.poller.EventPoller:startPublishing:219:
+2025-01-06T10:54:36,341 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 155-1950-6304-6746-4492	Processing run() start
+2025-01-06T10:54:36,341  INFO [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 155-1950-6304-6746-4492	Processor max Threads Allowable 3, Processor already spawned 0 threads 
+2025-01-06T10:54:36,341  INFO [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 155-1950-6304-6746-4492	GEFU_PROCESS_SEL_LOCK acquire 155 enter .
+2025-01-06T10:54:36,341 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 155-1950-6304-6746-4492	INFRA DEBUG----->inside openConnection() Entity Code is :235
+2025-01-06T10:54:36,341 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 155-1950-6304-6746-4492	INFRA DEBUG----->Else :true
+2025-01-06T10:54:36,341 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 155-1950-6304-6746-4492	INFRA DEBUG----->     database name: Oracle
+2025-01-06T10:54:36,341 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 155-1950-6304-6746-4492	INFRA DEBUG----->     database type: oracle
+2025-01-06T10:54:36,341 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 155-1950-6304-6746-4492	INFRA DEBUG----->   setSessionId()  [NO ACTION]  Exit:
+2025-01-06T10:54:36,341 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 155-1950-6304-6746-4492	INFRA DEBUG----->     openConnection() Exit:
+2025-01-06T10:54:36,343  INFO [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 155-1950-6304-6746-4492	getFilesToProcess() entry
+2025-01-06T10:54:36,343 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager: 155-1950-6304-6746-4492	OPEN_NEW:com.ofss.fc.upload.AbstractProcessFileController:getFilesToProcess:416:
+2025-01-06T10:54:36,343 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 155-1950-6304-6746-4492	INFRA DEBUG----->inside openConnection() Entity Code is :235
+2025-01-06T10:54:36,343 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 155-1950-6304-6746-4492	INFRA DEBUG----->Else :true
+2025-01-06T10:54:36,343 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 155-1950-6304-6746-4492	INFRA DEBUG----->     database name: Oracle
+2025-01-06T10:54:36,343 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 155-1950-6304-6746-4492	INFRA DEBUG----->     database type: oracle
+2025-01-06T10:54:36,343 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 155-1950-6304-6746-4492	INFRA DEBUG----->   setSessionId()  [NO ACTION]  Exit:
+2025-01-06T10:54:36,343 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 155-1950-6304-6746-4492	INFRA DEBUG----->     openConnection() Exit:
+2025-01-06T10:54:36,345 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 155-1950-6304-6746-4492	INFRA DEBUG----->inside openConnection() Entity Code is :235
+2025-01-06T10:54:36,345 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 155-1950-6304-6746-4492	INFRA DEBUG----->Else :true
+2025-01-06T10:54:36,345 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 155-1950-6304-6746-4492	INFRA DEBUG----->     database name: Oracle
+2025-01-06T10:54:36,345 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 155-1950-6304-6746-4492	INFRA DEBUG----->     database type: oracle
+2025-01-06T10:54:36,345 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 155-1950-6304-6746-4492	INFRA DEBUG----->   setSessionId()  [NO ACTION]  Exit:
+2025-01-06T10:54:36,345 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 155-1950-6304-6746-4492	INFRA DEBUG----->     openConnection() Exit:
+2025-01-06T10:54:36,346 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 155-1950-6304-6746-4492	INFRA DEBUG----->inside openConnection() Entity Code is :235
+2025-01-06T10:54:36,346 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 155-1950-6304-6746-4492	INFRA DEBUG----->Else :true
+2025-01-06T10:54:36,346 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 155-1950-6304-6746-4492	INFRA DEBUG----->     database name: Oracle
+2025-01-06T10:54:36,346 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 155-1950-6304-6746-4492	INFRA DEBUG----->     database type: oracle
+2025-01-06T10:54:36,346 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 155-1950-6304-6746-4492	INFRA DEBUG----->   setSessionId()  [NO ACTION]  Exit:
+2025-01-06T10:54:36,346 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 155-1950-6304-6746-4492	INFRA DEBUG----->     openConnection() Exit:
+2025-01-06T10:54:36,349 FATAL [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 155-1950-6304-6746-4492	aborted file :: FileId 402880e49397a0cc019397a678e5001d
+2025-01-06T10:54:36,351 FATAL [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 155-1950-6304-6746-4492	aborted file :: FileId 402880e49397a0cc019397d02e7d008e
+2025-01-06T10:54:36,354 FATAL [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 155-1950-6304-6746-4492	aborted file :: FileId 402880e4939a765301939a8289cb001e
+2025-01-06T10:54:36,354 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager: 155-1950-6304-6746-4492	CLOSE_FORCE:com.ofss.fc.upload.AbstractProcessFileController:getFilesToProcess:480:
+2025-01-06T10:54:36,354 FATAL [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 155-1950-6304-6746-4492	Files selected 3
+2025-01-06T10:54:36,354 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager: 155-1950-6304-6746-4492	OPEN_NEW:com.ofss.fc.upload.AbstractProcessFileController:markFiles:586:
+2025-01-06T10:54:36,354 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 155-1950-6304-6746-4492	INFRA DEBUG----->inside openConnection() Entity Code is :235
+2025-01-06T10:54:36,354 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 155-1950-6304-6746-4492	INFRA DEBUG----->Else :true
+2025-01-06T10:54:36,354 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 155-1950-6304-6746-4492	INFRA DEBUG----->     database name: Oracle
+2025-01-06T10:54:36,354 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 155-1950-6304-6746-4492	INFRA DEBUG----->     database type: oracle
+2025-01-06T10:54:36,354 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 155-1950-6304-6746-4492	INFRA DEBUG----->   setSessionId()  [NO ACTION]  Exit:
+2025-01-06T10:54:36,354 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 155-1950-6304-6746-4492	INFRA DEBUG----->     openConnection() Exit:
+2025-01-06T10:54:36,354 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager: 155-1950-6304-6746-4492	OPEN:com.ofss.fc.upload.AbstractProcessFileController:getEodProcessesInProgress:667:
+2025-01-06T10:54:36,356 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager: 155-1950-6304-6746-4492	CLOSE:com.ofss.fc.upload.AbstractProcessFileController:getEodProcessesInProgress:680:
+2025-01-06T10:54:36,362 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.HibernateSessionWrapper: 155-1950-6304-6746-4492	HibernateSessionWrapper Error =No row with the given identifier exists: [com.ofss.fc.entity.xface.ExternalFileMetaData#com.ofss.fc.entity.xface.ExternalFileMetaData@2a9fd145]
+2025-01-06T10:54:36,363 FATAL [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 155-1950-6304-6746-4492	Error in marking for processed 
+com.ofss.fc.infra.das.exception.RecordNotFoundException: No row with the given identifier exists: [com.ofss.fc.entity.xface.ExternalFileMetaData#com.ofss.fc.entity.xface.ExternalFileMetaData@2a9fd145]
+[COD_XF_SYSTEM=GEFU][FILE_TYPE=GEFUCIM20][FLG_MNT_STATUS=A]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateExceptionTranslator.translate(HibernateExceptionTranslator.java:99) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateSessionWrapper.load(HibernateSessionWrapper.java:500) ~[com.ofss.fc.infra.jar:?]
+	at com.ofss.fc.upload.AbstractProcessFileController.markFiles(AbstractProcessFileController.java:599) [com.ofss.fc.upload.core.jar:?]
+	at com.ofss.fc.upload.AbstractProcessFileController.selectAndProcessFiles(AbstractProcessFileController.java:377) [com.ofss.fc.upload.core.jar:?]
+	at com.ofss.fc.upload.UnstreamedController.startUploadedFiles(UnstreamedController.java:60) [com.ofss.fc.upload.core.jar:?]
+	at com.ofss.fc.upload.AbstractProcessFileController.run(AbstractProcessFileController.java:315) [com.ofss.fc.upload.core.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_321]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [?:1.8.0_321]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [?:1.8.0_321]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [?:1.8.0_321]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_321]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_321]
+	at java.lang.Thread.run(Thread.java:750) [?:1.8.0_321]
+Caused by: org.hibernate.ObjectNotFoundException: No row with the given identifier exists: [com.ofss.fc.entity.xface.ExternalFileMetaData#com.ofss.fc.entity.xface.ExternalFileMetaData@2a9fd145]
+	at org.hibernate.boot.internal.StandardEntityNotFoundDelegate.handleEntityNotFound(StandardEntityNotFoundDelegate.java:28) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:216) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:327) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.doOnLoad(DefaultLoadEventListener.java:108) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:74) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at com.ofss.fc.infra.das.orm.hibernate.listeners.HibernateLoadEventListener.onLoad(HibernateLoadEventListener.java:50) ~[com.ofss.fc.infra.jar:?]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:118) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.hibernate.internal.SessionImpl.fireLoadNoChecks(SessionImpl.java:1226) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:1215) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.hibernate.internal.SessionImpl.access$2100(SessionImpl.java:201) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.doGetReference(SessionImpl.java:2790) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.lambda$getReference$0(SessionImpl.java:2739) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.perform(SessionImpl.java:2763) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.getReference(SessionImpl.java:2739) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at org.hibernate.internal.SessionImpl.load(SessionImpl.java:1013) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
+	at com.ofss.fc.infra.das.orm.hibernate.HibernateSessionWrapper.load(HibernateSessionWrapper.java:496) ~[com.ofss.fc.infra.jar:?]
+	... 11 more
+2025-01-06T10:54:36,364 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager: 155-1950-6304-6746-4492	CLOSE_FORCE:com.ofss.fc.upload.AbstractProcessFileController:markFiles:653:
+2025-01-06T10:54:36,371 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager: 155-1950-6304-6746-4492	CLOSE_FORCE:com.ofss.fc.infra.lock.CentralDistributedLock:release:251:
+2025-01-06T10:54:36,371 DEBUG [pool-25-thread-1] 235.RESTART.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 155-1950-6304-6746-4492	Processing run() exit
+2025-01-06T10:54:36,620 DEBUG [Timer-27] 235.com.ofss.fc.alert.poller.BatchEventPoller: 150-1950-6303-9894-8621	Event Poller Thread Timestamp : Mon Jan 06 10:54:36 IST 2025
+2025-01-06T10:54:36,620 DEBUG [Timer-27] 235.com.ofss.fc.alert.poller.BatchEventPoller: 150-1950-6303-9894-8621	Publishing for entityCode 235
+2025-01-06T10:54:36,620 DEBUG [Timer-27] 235.com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager: 150-1950-6303-9894-8621	OPEN_NEW:com.ofss.fc.alert.poller.EventPoller:startPublishing:142:
+2025-01-06T10:54:36,620 DEBUG [Timer-27] 235.com.ofss.fc.alert.poller.BatchEventPoller: 150-1950-6303-9894-8621	ALERT_LOG_FETCH_LOCK acquire 150 enter .
+2025-01-06T10:54:36,620 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->inside openConnection() Entity Code is :235
+2025-01-06T10:54:36,620 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->Else :true
+2025-01-06T10:54:36,620 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->     database name: Oracle
+2025-01-06T10:54:36,620 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->     database type: oracle
+2025-01-06T10:54:36,620 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->   setSessionId()  [NO ACTION]  Exit:
+2025-01-06T10:54:36,620 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->     openConnection() Exit:
+2025-01-06T10:54:36,622 DEBUG [Timer-27] 235.com.ofss.fc.alert.poller.BatchEventPoller: 150-1950-6303-9894-8621	LOCK ACQUIRED
+2025-01-06T10:54:36,622 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->inside openConnection() Entity Code is :235
+2025-01-06T10:54:36,622 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->Else :true
+2025-01-06T10:54:36,622 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->     database name: Oracle
+2025-01-06T10:54:36,622 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->     database type: oracle
+2025-01-06T10:54:36,622 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->   setSessionId()  [NO ACTION]  Exit:
+2025-01-06T10:54:36,622 DEBUG [Timer-27] 235.com.ofss.fc.infra.jdbc.FCRJConnection: 150-1950-6303-9894-8621	INFRA DEBUG----->     openConnection() Exit:
+2025-01-06T10:54:36,624 DEBUG [Timer-27] 235.com.ofss.fc.alert.poller.BatchEventPoller: 150-1950-6303-9894-8621	eventLogger List 1 : 0
+2025-01-06T10:54:36,626 DEBUG [Timer-27] 235.com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager: 150-1950-6303-9894-8621	CLOSE_FORCE:com.ofss.fc.infra.lock.CentralDistributedLock:release:251:
+2025-01-06T10:54:36,626 DEBUG [Timer-27] 235.com.ofss.fc.alert.poller.BatchEventPoller: 150-1950-6303-9894-8621	lock released....
+2025-01-06T10:54:36,626 DEBUG [Timer-27] 235.com.ofss.fc.alert.poller.BatchEventPoller: 150-1950-6303-9894-8621	eventLogger List 2 : 0
+2025-01-06T10:54:36,626 DEBUG [Timer-27] 235.com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager: 150-1950-6303-9894-8621	CLOSE_FORCE:com.ofss.fc.alert.poller.EventPoller:startPublishing:219:
+2025-01-06T10:54:36,823 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 154-1950-6304-6004-2826	Processing run() start
+2025-01-06T10:54:36,823  INFO [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 154-1950-6304-6004-2826	Processor max Threads Allowable 1, Processor already spawned 0 threads 
+2025-01-06T10:54:36,823  INFO [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 154-1950-6304-6004-2826	GEFU_PROCESS_SEL_LOCK acquire 154 enter .
+2025-01-06T10:54:36,823 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 154-1950-6304-6004-2826	INFRA DEBUG----->inside openConnection() Entity Code is :235
+2025-01-06T10:54:36,823 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 154-1950-6304-6004-2826	INFRA DEBUG----->Else :true
+2025-01-06T10:54:36,824 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 154-1950-6304-6004-2826	INFRA DEBUG----->     database name: Oracle
+2025-01-06T10:54:36,824 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 154-1950-6304-6004-2826	INFRA DEBUG----->     database type: oracle
+2025-01-06T10:54:36,824 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 154-1950-6304-6004-2826	INFRA DEBUG----->   setSessionId()  [NO ACTION]  Exit:
+2025-01-06T10:54:36,824 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 154-1950-6304-6004-2826	INFRA DEBUG----->     openConnection() Exit:
+2025-01-06T10:54:36,824 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 165-1950-6305-0662-2281	Processing run() start
+2025-01-06T10:54:36,824  INFO [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 165-1950-6305-0662-2281	Processor max Threads Allowable 1, Processor already spawned 0 threads 
+2025-01-06T10:54:36,824  INFO [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 165-1950-6305-0662-2281	GEFU_PROCESS_SEL_LOCK acquire 165 enter .
+2025-01-06T10:54:36,824 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 165-1950-6305-0662-2281	INFRA DEBUG----->inside openConnection() Entity Code is :235
+2025-01-06T10:54:36,824 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 165-1950-6305-0662-2281	INFRA DEBUG----->Else :true
+2025-01-06T10:54:36,824 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 165-1950-6305-0662-2281	INFRA DEBUG----->     database name: Oracle
+2025-01-06T10:54:36,824 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 165-1950-6305-0662-2281	INFRA DEBUG----->     database type: oracle
+2025-01-06T10:54:36,824 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 165-1950-6305-0662-2281	INFRA DEBUG----->   setSessionId()  [NO ACTION]  Exit:
+2025-01-06T10:54:36,824 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 165-1950-6305-0662-2281	INFRA DEBUG----->     openConnection() Exit:
+2025-01-06T10:54:36,825  INFO [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 154-1950-6304-6004-2826	getFilesToProcess() entry
+2025-01-06T10:54:36,826 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager: 154-1950-6304-6004-2826	OPEN_NEW:com.ofss.fc.upload.AbstractProcessFileController:getFilesToProcess:416:
+2025-01-06T10:54:36,826 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 154-1950-6304-6004-2826	INFRA DEBUG----->inside openConnection() Entity Code is :235
+2025-01-06T10:54:36,826 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 154-1950-6304-6004-2826	INFRA DEBUG----->Else :true
+2025-01-06T10:54:36,826 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 154-1950-6304-6004-2826	INFRA DEBUG----->     database name: Oracle
+2025-01-06T10:54:36,826 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 154-1950-6304-6004-2826	INFRA DEBUG----->     database type: oracle
+2025-01-06T10:54:36,826 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 154-1950-6304-6004-2826	INFRA DEBUG----->   setSessionId()  [NO ACTION]  Exit:
+2025-01-06T10:54:36,826 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 154-1950-6304-6004-2826	INFRA DEBUG----->     openConnection() Exit:
+2025-01-06T10:54:36,826  INFO [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 165-1950-6305-0662-2281	getFilesToProcess() entry
+2025-01-06T10:54:36,826 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager: 165-1950-6305-0662-2281	OPEN_NEW:com.ofss.fc.upload.AbstractProcessFileController:getFilesToProcess:416:
+2025-01-06T10:54:36,827 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 165-1950-6305-0662-2281	INFRA DEBUG----->inside openConnection() Entity Code is :235
+2025-01-06T10:54:36,827 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 165-1950-6305-0662-2281	INFRA DEBUG----->Else :true
+2025-01-06T10:54:36,827 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 165-1950-6305-0662-2281	INFRA DEBUG----->     database name: Oracle
+2025-01-06T10:54:36,827 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 165-1950-6305-0662-2281	INFRA DEBUG----->     database type: oracle
+2025-01-06T10:54:36,827 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 165-1950-6305-0662-2281	INFRA DEBUG----->   setSessionId()  [NO ACTION]  Exit:
+2025-01-06T10:54:36,827 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 165-1950-6305-0662-2281	INFRA DEBUG----->     openConnection() Exit:
+2025-01-06T10:54:36,827 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager: 154-1950-6304-6004-2826	CLOSE_FORCE:com.ofss.fc.upload.AbstractProcessFileController:getFilesToProcess:480:
+2025-01-06T10:54:36,827 FATAL [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 154-1950-6304-6004-2826	Files selected 0
+2025-01-06T10:54:36,828 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager: 165-1950-6305-0662-2281	CLOSE_FORCE:com.ofss.fc.upload.AbstractProcessFileController:getFilesToProcess:480:
+2025-01-06T10:54:36,828 FATAL [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 165-1950-6305-0662-2281	Files selected 0
+2025-01-06T10:54:36,829 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager: 154-1950-6304-6004-2826	CLOSE_FORCE:com.ofss.fc.infra.lock.CentralDistributedLock:release:251:
+2025-01-06T10:54:36,829 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 154-1950-6304-6004-2826	Processing run() exit
+2025-01-06T10:54:36,829 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager: 165-1950-6305-0662-2281	CLOSE_FORCE:com.ofss.fc.infra.lock.CentralDistributedLock:release:251:
+2025-01-06T10:54:36,829 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 165-1950-6305-0662-2281	Processing run() exit
+2025-01-06T10:54:41,829 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 154-1950-6304-6004-2826	Processing run() start
+2025-01-06T10:54:41,829  INFO [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 154-1950-6304-6004-2826	Processor max Threads Allowable 1, Processor already spawned 0 threads 
+2025-01-06T10:54:41,829  INFO [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 154-1950-6304-6004-2826	GEFU_PROCESS_SEL_LOCK acquire 154 enter .
+2025-01-06T10:54:41,829 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 154-1950-6304-6004-2826	INFRA DEBUG----->inside openConnection() Entity Code is :235
+2025-01-06T10:54:41,829 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 154-1950-6304-6004-2826	INFRA DEBUG----->Else :true
+2025-01-06T10:54:41,829 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 154-1950-6304-6004-2826	INFRA DEBUG----->     database name: Oracle
+2025-01-06T10:54:41,829 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 154-1950-6304-6004-2826	INFRA DEBUG----->     database type: oracle
+2025-01-06T10:54:41,829 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 154-1950-6304-6004-2826	INFRA DEBUG----->   setSessionId()  [NO ACTION]  Exit:
+2025-01-06T10:54:41,829 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 154-1950-6304-6004-2826	INFRA DEBUG----->     openConnection() Exit:
+2025-01-06T10:54:41,829 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 165-1950-6305-0662-2281	Processing run() start
+2025-01-06T10:54:41,829  INFO [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 165-1950-6305-0662-2281	Processor max Threads Allowable 1, Processor already spawned 0 threads 
+2025-01-06T10:54:41,829  INFO [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 165-1950-6305-0662-2281	GEFU_PROCESS_SEL_LOCK acquire 165 enter .
+2025-01-06T10:54:41,829 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 165-1950-6305-0662-2281	INFRA DEBUG----->inside openConnection() Entity Code is :235
+2025-01-06T10:54:41,829 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 165-1950-6305-0662-2281	INFRA DEBUG----->Else :true
+2025-01-06T10:54:41,829 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 165-1950-6305-0662-2281	INFRA DEBUG----->     database name: Oracle
+2025-01-06T10:54:41,829 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 165-1950-6305-0662-2281	INFRA DEBUG----->     database type: oracle
+2025-01-06T10:54:41,829 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 165-1950-6305-0662-2281	INFRA DEBUG----->   setSessionId()  [NO ACTION]  Exit:
+2025-01-06T10:54:41,829 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 165-1950-6305-0662-2281	INFRA DEBUG----->     openConnection() Exit:
+2025-01-06T10:54:41,831  INFO [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 154-1950-6304-6004-2826	getFilesToProcess() entry
+2025-01-06T10:54:41,831 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager: 154-1950-6304-6004-2826	OPEN_NEW:com.ofss.fc.upload.AbstractProcessFileController:getFilesToProcess:416:
+2025-01-06T10:54:41,832 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 154-1950-6304-6004-2826	INFRA DEBUG----->inside openConnection() Entity Code is :235
+2025-01-06T10:54:41,832 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 154-1950-6304-6004-2826	INFRA DEBUG----->Else :true
+2025-01-06T10:54:41,832 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 154-1950-6304-6004-2826	INFRA DEBUG----->     database name: Oracle
+2025-01-06T10:54:41,832 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 154-1950-6304-6004-2826	INFRA DEBUG----->     database type: oracle
+2025-01-06T10:54:41,832 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 154-1950-6304-6004-2826	INFRA DEBUG----->   setSessionId()  [NO ACTION]  Exit:
+2025-01-06T10:54:41,832 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 154-1950-6304-6004-2826	INFRA DEBUG----->     openConnection() Exit:
+2025-01-06T10:54:41,832  INFO [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 165-1950-6305-0662-2281	getFilesToProcess() entry
+2025-01-06T10:54:41,832 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager: 165-1950-6305-0662-2281	OPEN_NEW:com.ofss.fc.upload.AbstractProcessFileController:getFilesToProcess:416:
+2025-01-06T10:54:41,832 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 165-1950-6305-0662-2281	INFRA DEBUG----->inside openConnection() Entity Code is :235
+2025-01-06T10:54:41,832 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 165-1950-6305-0662-2281	INFRA DEBUG----->Else :true
+2025-01-06T10:54:41,832 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 165-1950-6305-0662-2281	INFRA DEBUG----->     database name: Oracle
+2025-01-06T10:54:41,832 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 165-1950-6305-0662-2281	INFRA DEBUG----->     database type: oracle
+2025-01-06T10:54:41,832 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 165-1950-6305-0662-2281	INFRA DEBUG----->   setSessionId()  [NO ACTION]  Exit:
+2025-01-06T10:54:41,832 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.infra.jdbc.FCRJConnection: 165-1950-6305-0662-2281	INFRA DEBUG----->     openConnection() Exit:
+2025-01-06T10:54:41,833 DEBUG [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager: 154-1950-6304-6004-2826	CLOSE_FORCE:com.ofss.fc.upload.AbstractProcessFileController:getFilesToProcess:480:
+2025-01-06T10:54:41,833 FATAL [pool-13-thread-1] 235.OCGEFU.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 154-1950-6304-6004-2826	Files selected 0
+2025-01-06T10:54:41,833 DEBUG [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.infra.das.orm.hibernate.HibernateDataAccessManager: 165-1950-6305-0662-2281	CLOSE_FORCE:com.ofss.fc.upload.AbstractProcessFileController:getFilesToProcess:480:
+2025-01-06T10:54:41,833 FATAL [pool-15-thread-1] 235.BAO.GEN.FCCoreServer.com.ofss.fc.upload.AbstractProcessFileController: 165-1950-6305-0662-2281	Files selected 0

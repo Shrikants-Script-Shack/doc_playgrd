@@ -1,0 +1,349 @@
+[20250104 17:38:58 586]HostUpload.processMsg-->Creating FCControllerSMS.handleRequest
+[20250104 17:38:58 587]FCHandlerPasswordReset.getPasswordResetResponse-->Just Entered
+[20250104 17:38:58 587]FCHandlerPasswordReset.getPasswordResetResponse-->bankCode=900
+[20250104 17:38:58 587]FCHandlerPasswordReset.getPasswordResetResponse-->dateTime=2025-12-31
+[20250104 17:38:58 587]FCHandlerPasswordReset.getPasswordResetResponse-->fromLogin=true
+[20250104 17:38:58 587]FCHandlerPasswordReset.getPasswordResetResponse-->creating FCJLogin Bean
+[20250104 17:38:58 588]FCHandlerPasswordReset.getPasswordResetResponse-->calling FCJLogin.resetPassword
+[20250104 17:38:58 588]FCJLoginBean.resetPassword-->Just Entered
+[20250104 17:38:58 588]FCJLoginBean.resetPassword-->getting ds from FCServiceLocator
+[20250104 17:38:58 588]PasswordOracleDAO.getUserSalt-->userId = 57150
+[20250104 17:38:58 589]PasswordOracleDAO.getUserPassword-->userId = 57150
+[20250104 17:38:58 596]FCJLoginBean.resetPassword-->calling PasswordOracleDAO.getUserPassword
+[20250104 17:38:58 596]PasswordOracleDAO.getRestrictedPasswords-->userId = 57150 bankCode = 900
+[20250104 17:39:00 853]*****Appserver Log Starts*****
+[20250104 17:39:00 853]HostUpload.processMsg-->Creating FCControllerSMS
+[20250104 17:39:00 853]HostUpload.processMsg-->Creating FCControllerSMS.handleRequest
+[20250104 17:39:00 853]FCHandlerPasswordReset.getPasswordResetResponse-->Just Entered
+[20250104 17:39:00 853]FCHandlerPasswordReset.getPasswordResetResponse-->bankCode=900
+[20250104 17:39:00 853]FCHandlerPasswordReset.getPasswordResetResponse-->dateTime=2025-12-31
+[20250104 17:39:00 853]FCHandlerPasswordReset.getPasswordResetResponse-->fromLogin=true
+[20250104 17:39:00 853]FCHandlerPasswordReset.getPasswordResetResponse-->creating FCJLogin Bean
+[20250104 17:39:00 853]FCHandlerPasswordReset.getPasswordResetResponse-->calling FCJLogin.resetPassword
+[20250104 17:39:00 855]FCJLoginBean.resetPassword-->Just Entered
+[20250104 17:39:00 855]FCJLoginBean.resetPassword-->getting ds from FCServiceLocator
+[20250104 17:39:00 855]PasswordOracleDAO.getUserSalt-->userId = 57150
+[20250104 17:39:00 856]PasswordOracleDAO.getUserPassword-->userId = 57150
+[20250104 17:39:00 865]FCJLoginBean.resetPassword-->calling PasswordOracleDAO.getUserPassword
+[20250104 17:39:00 865]PasswordOracleDAO.getRestrictedPasswords-->userId = 57150 bankCode = 900
+[20250104 17:39:01 089]FCJLoginBean.resetPassword-->FCException raised=>>>>>SM-00274!1~
+[20250104 17:39:01 091]FCHandlerPasswordReset.getPasswordResetResponse-->FCException raised=>>>>>SM-00274!1~
+[20250104 17:39:01 092]com.ofss.fcc.exception.FCException: SM-00274!1~
+	at com.ofss.fcc.sms.FCJLoginBean.resetPassword(FCJLoginBean.java:119)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.bea.core.repackaged.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at com.bea.core.repackaged.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at com.bea.core.repackaged.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at com.oracle.pitchfork.intercept.MethodInvocationInvocationContext.proceed(MethodInvocationInvocationContext.java:101)
+	at com.oracle.pitchfork.intercept.JeeInterceptorInterceptor.invoke(JeeInterceptorInterceptor.java:101)
+	at com.bea.core.repackaged.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at com.oracle.pitchfork.intercept.MethodInvocationInvocationContext.proceed(MethodInvocationInvocationContext.java:101)
+	at org.jboss.weld.module.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:81)
+	at org.jboss.weld.module.ejb.SessionBeanInterceptor.aroundInvoke(SessionBeanInterceptor.java:52)
+	at sun.reflect.GeneratedMethodAccessor1731.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.oracle.pitchfork.intercept.JeeInterceptorInterceptor.invoke(JeeInterceptorInterceptor.java:94)
+	at com.bea.core.repackaged.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at com.bea.core.repackaged.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:136)
+	at com.bea.core.repackaged.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:124)
+	at com.bea.core.repackaged.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at com.bea.core.repackaged.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy345.resetPassword(Unknown Source)
+	at com.ofss.fcc.sms.FCJLogin_j3k2fc_FCJLoginLocalImpl.__WL_invoke(Unknown Source)
+	at weblogic.ejb.container.internal.SessionLocalMethodInvoker.invoke(SessionLocalMethodInvoker.java:33)
+	at com.ofss.fcc.sms.FCJLogin_j3k2fc_FCJLoginLocalImpl.resetPassword(Unknown Source)
+	at com.ofss.fcc.handlers.FCHandlerPasswordReset.getPasswordResetResponse(FCHandlerPasswordReset.java:175)
+	at com.ofss.fcc.common.FCControllerSMS.handleRequest(FCControllerSMS.java:261)
+	at com.ofss.fcc.common.HostUpload.processMsg(HostUpload.java:856)
+	at com.ofss.infra.handlers.centralized.CCommon.callHostServer(CCommon.java:67)
+	at com.ofss.infra.handlers.centralized.CChgPwd.process(CChgPwd.java:144)
+	at com.ofss.infra.handlers.NonWorkflowHandler.process(NonWorkflowHandler.java:125)
+	at com.ofss.infra.web.FCPasswdResetServlet.doPost(FCPasswdResetServlet.java:104)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:665)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:295)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:260)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:137)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:353)
+	at weblogic.servlet.internal.TailFilter.doFilter(TailFilter.java:25)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:82)
+	at com.ofss.infra.web.AuthenticationFilter.doFilter(AuthenticationFilter.java:98)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:82)
+	at com.github.ziplet.filter.compression.CompressingFilter.doFilter(CompressingFilter.java:276)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:82)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3866)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3829)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:344)
+	at weblogic.security.service.SecurityManager.runAsForUserCode(SecurityManager.java:197)
+	at weblogic.servlet.provider.WlsSecurityProvider.runAsForUserCode(WlsSecurityProvider.java:203)
+	at weblogic.servlet.provider.WlsSubjectHandle.run(WlsSubjectHandle.java:71)
+	at weblogic.servlet.internal.WebAppServletContext.processSecuredExecute(WebAppServletContext.java:2502)
+	at weblogic.servlet.internal.WebAppServletContext.doSecuredExecute(WebAppServletContext.java:2351)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2326)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2304)
+	at weblogic.servlet.internal.ServletRequestImpl.runInternal(ServletRequestImpl.java:1779)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1733)
+	at weblogic.servlet.provider.ContainerSupportProviderImpl$WlsRequestExecutor.run(ContainerSupportProviderImpl.java:272)
+	at weblogic.invocation.ComponentInvocationContextManager._runAs(ComponentInvocationContextManager.java:352)
+	at weblogic.invocation.ComponentInvocationContextManager.runAs(ComponentInvocationContextManager.java:337)
+	at weblogic.work.LivePartitionUtility.doRunWorkUnderContext(LivePartitionUtility.java:57)
+	at weblogic.work.PartitionUtility.runWorkUnderContext(PartitionUtility.java:41)
+	at weblogic.work.SelfTuningWorkManagerImpl.runWorkUnderContext(SelfTuningWorkManagerImpl.java:651)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:420)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:360)
+
+[20250104 17:39:03 356]FCJLoginBean.resetPassword-->FCException raised=>>>>>SM-00274!1~
+[20250104 17:39:03 356]FCHandlerPasswordReset.getPasswordResetResponse-->FCException raised=>>>>>SM-00274!1~
+[20250104 17:39:03 357]com.ofss.fcc.exception.FCException: SM-00274!1~
+	at com.ofss.fcc.sms.FCJLoginBean.resetPassword(FCJLoginBean.java:119)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.bea.core.repackaged.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at com.bea.core.repackaged.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at com.bea.core.repackaged.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at com.oracle.pitchfork.intercept.MethodInvocationInvocationContext.proceed(MethodInvocationInvocationContext.java:101)
+	at com.oracle.pitchfork.intercept.JeeInterceptorInterceptor.invoke(JeeInterceptorInterceptor.java:101)
+	at com.bea.core.repackaged.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at com.oracle.pitchfork.intercept.MethodInvocationInvocationContext.proceed(MethodInvocationInvocationContext.java:101)
+	at org.jboss.weld.module.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:81)
+	at org.jboss.weld.module.ejb.SessionBeanInterceptor.aroundInvoke(SessionBeanInterceptor.java:52)
+	at sun.reflect.GeneratedMethodAccessor1731.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.oracle.pitchfork.intercept.JeeInterceptorInterceptor.invoke(JeeInterceptorInterceptor.java:94)
+	at com.bea.core.repackaged.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at com.bea.core.repackaged.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:136)
+	at com.bea.core.repackaged.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:124)
+	at com.bea.core.repackaged.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at com.bea.core.repackaged.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy345.resetPassword(Unknown Source)
+	at com.ofss.fcc.sms.FCJLogin_j3k2fc_FCJLoginLocalImpl.__WL_invoke(Unknown Source)
+	at weblogic.ejb.container.internal.SessionLocalMethodInvoker.invoke(SessionLocalMethodInvoker.java:33)
+	at com.ofss.fcc.sms.FCJLogin_j3k2fc_FCJLoginLocalImpl.resetPassword(Unknown Source)
+	at com.ofss.fcc.handlers.FCHandlerPasswordReset.getPasswordResetResponse(FCHandlerPasswordReset.java:175)
+	at com.ofss.fcc.common.FCControllerSMS.handleRequest(FCControllerSMS.java:261)
+	at com.ofss.fcc.common.HostUpload.processMsg(HostUpload.java:856)
+	at com.ofss.infra.handlers.centralized.CCommon.callHostServer(CCommon.java:67)
+	at com.ofss.infra.handlers.centralized.CChgPwd.process(CChgPwd.java:144)
+	at com.ofss.infra.handlers.NonWorkflowHandler.process(NonWorkflowHandler.java:125)
+	at com.ofss.infra.web.FCPasswdResetServlet.doPost(FCPasswdResetServlet.java:104)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:665)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:295)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:260)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:137)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:353)
+	at weblogic.servlet.internal.TailFilter.doFilter(TailFilter.java:25)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:82)
+	at com.ofss.infra.web.AuthenticationFilter.doFilter(AuthenticationFilter.java:98)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:82)
+	at com.github.ziplet.filter.compression.CompressingFilter.doFilter(CompressingFilter.java:276)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:82)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3866)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3829)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:344)
+	at weblogic.security.service.SecurityManager.runAsForUserCode(SecurityManager.java:197)
+	at weblogic.servlet.provider.WlsSecurityProvider.runAsForUserCode(WlsSecurityProvider.java:203)
+	at weblogic.servlet.provider.WlsSubjectHandle.run(WlsSubjectHandle.java:71)
+	at weblogic.servlet.internal.WebAppServletContext.processSecuredExecute(WebAppServletContext.java:2502)
+	at weblogic.servlet.internal.WebAppServletContext.doSecuredExecute(WebAppServletContext.java:2351)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2326)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2304)
+	at weblogic.servlet.internal.ServletRequestImpl.runInternal(ServletRequestImpl.java:1779)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1733)
+	at weblogic.servlet.provider.ContainerSupportProviderImpl$WlsRequestExecutor.run(ContainerSupportProviderImpl.java:272)
+	at weblogic.invocation.ComponentInvocationContextManager._runAs(ComponentInvocationContextManager.java:352)
+	at weblogic.invocation.ComponentInvocationContextManager.runAs(ComponentInvocationContextManager.java:337)
+	at weblogic.work.LivePartitionUtility.doRunWorkUnderContext(LivePartitionUtility.java:57)
+	at weblogic.work.PartitionUtility.runWorkUnderContext(PartitionUtility.java:41)
+	at weblogic.work.SelfTuningWorkManagerImpl.runWorkUnderContext(SelfTuningWorkManagerImpl.java:651)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:420)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:360)
+
+[20250104 17:39:22 111]*****Appserver Log Starts*****
+[20250104 17:39:22 111]HostUpload.processMsg-->Creating FCControllerSMS
+[20250104 17:39:22 111]HostUpload.processMsg-->Creating FCControllerSMS.handleRequest
+[20250104 17:39:22 111]FCHandlerPasswordReset.getPasswordResetResponse-->Just Entered
+[20250104 17:39:22 111]FCHandlerPasswordReset.getPasswordResetResponse-->bankCode=900
+[20250104 17:39:22 111]FCHandlerPasswordReset.getPasswordResetResponse-->dateTime=2025-12-31
+[20250104 17:39:22 111]FCHandlerPasswordReset.getPasswordResetResponse-->fromLogin=true
+[20250104 17:39:22 111]FCHandlerPasswordReset.getPasswordResetResponse-->creating FCJLogin Bean
+[20250104 17:39:22 111]FCHandlerPasswordReset.getPasswordResetResponse-->calling FCJLogin.resetPassword
+[20250104 17:39:22 112]FCJLoginBean.resetPassword-->Just Entered
+[20250104 17:39:22 112]FCJLoginBean.resetPassword-->getting ds from FCServiceLocator
+[20250104 17:39:22 113]PasswordOracleDAO.getUserSalt-->userId = 57150
+[20250104 17:39:22 114]PasswordOracleDAO.getUserPassword-->userId = 57150
+[20250104 17:39:22 123]FCJLoginBean.resetPassword-->calling PasswordOracleDAO.getUserPassword
+[20250104 17:39:22 123]PasswordOracleDAO.getRestrictedPasswords-->userId = 57150 bankCode = 900
+[20250104 17:39:24 489]FCJLoginBean.resetPassword-->FCException raised=>>>>>SM-00274!1~
+[20250104 17:39:24 490]FCHandlerPasswordReset.getPasswordResetResponse-->FCException raised=>>>>>SM-00274!1~
+[20250104 17:39:24 490]com.ofss.fcc.exception.FCException: SM-00274!1~
+	at com.ofss.fcc.sms.FCJLoginBean.resetPassword(FCJLoginBean.java:119)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.bea.core.repackaged.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at com.bea.core.repackaged.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at com.bea.core.repackaged.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at com.oracle.pitchfork.intercept.MethodInvocationInvocationContext.proceed(MethodInvocationInvocationContext.java:101)
+	at com.oracle.pitchfork.intercept.JeeInterceptorInterceptor.invoke(JeeInterceptorInterceptor.java:101)
+	at com.bea.core.repackaged.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at com.oracle.pitchfork.intercept.MethodInvocationInvocationContext.proceed(MethodInvocationInvocationContext.java:101)
+	at org.jboss.weld.module.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:81)
+	at org.jboss.weld.module.ejb.SessionBeanInterceptor.aroundInvoke(SessionBeanInterceptor.java:52)
+	at sun.reflect.GeneratedMethodAccessor1731.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.oracle.pitchfork.intercept.JeeInterceptorInterceptor.invoke(JeeInterceptorInterceptor.java:94)
+	at com.bea.core.repackaged.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at com.bea.core.repackaged.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:136)
+	at com.bea.core.repackaged.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:124)
+	at com.bea.core.repackaged.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at com.bea.core.repackaged.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy345.resetPassword(Unknown Source)
+	at com.ofss.fcc.sms.FCJLogin_j3k2fc_FCJLoginLocalImpl.__WL_invoke(Unknown Source)
+	at weblogic.ejb.container.internal.SessionLocalMethodInvoker.invoke(SessionLocalMethodInvoker.java:33)
+	at com.ofss.fcc.sms.FCJLogin_j3k2fc_FCJLoginLocalImpl.resetPassword(Unknown Source)
+	at com.ofss.fcc.handlers.FCHandlerPasswordReset.getPasswordResetResponse(FCHandlerPasswordReset.java:175)
+	at com.ofss.fcc.common.FCControllerSMS.handleRequest(FCControllerSMS.java:261)
+	at com.ofss.fcc.common.HostUpload.processMsg(HostUpload.java:856)
+	at com.ofss.infra.handlers.centralized.CCommon.callHostServer(CCommon.java:67)
+	at com.ofss.infra.handlers.centralized.CChgPwd.process(CChgPwd.java:144)
+	at com.ofss.infra.handlers.NonWorkflowHandler.process(NonWorkflowHandler.java:125)
+	at com.ofss.infra.web.FCPasswdResetServlet.doPost(FCPasswdResetServlet.java:104)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:665)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:295)
+	at weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:260)
+	at weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:137)
+	at weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:353)
+	at weblogic.servlet.internal.TailFilter.doFilter(TailFilter.java:25)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:82)
+	at com.ofss.infra.web.AuthenticationFilter.doFilter(AuthenticationFilter.java:98)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:82)
+	at com.github.ziplet.filter.compression.CompressingFilter.doFilter(CompressingFilter.java:276)
+	at weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:82)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3866)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3829)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:344)
+	at weblogic.security.service.SecurityManager.runAsForUserCode(SecurityManager.java:197)
+	at weblogic.servlet.provider.WlsSecurityProvider.runAsForUserCode(WlsSecurityProvider.java:203)
+	at weblogic.servlet.provider.WlsSubjectHandle.run(WlsSubjectHandle.java:71)
+	at weblogic.servlet.internal.WebAppServletContext.processSecuredExecute(WebAppServletContext.java:2502)
+	at weblogic.servlet.internal.WebAppServletContext.doSecuredExecute(WebAppServletContext.java:2351)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2326)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2304)
+	at weblogic.servlet.internal.ServletRequestImpl.runInternal(ServletRequestImpl.java:1779)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1733)
+	at weblogic.servlet.provider.ContainerSupportProviderImpl$WlsRequestExecutor.run(ContainerSupportProviderImpl.java:272)
+	at weblogic.invocation.ComponentInvocationContextManager._runAs(ComponentInvocationContextManager.java:352)
+	at weblogic.invocation.ComponentInvocationContextManager.runAs(ComponentInvocationContextManager.java:337)
+	at weblogic.work.LivePartitionUtility.doRunWorkUnderContext(LivePartitionUtility.java:57)
+	at weblogic.work.PartitionUtility.runWorkUnderContext(PartitionUtility.java:41)
+	at weblogic.work.SelfTuningWorkManagerImpl.runWorkUnderContext(SelfTuningWorkManagerImpl.java:651)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:420)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:360)
+
+[20250104 17:48:09 076]*****APPSERVER LOG START*****
+[20250104 17:48:09 076]HostUpload.processMsg-->Creating FCControllerSMS
+[20250104 17:48:09 076]HostUpload.processMsg-->Creating FCControllerSMS.handleRequest
+[20250104 17:48:09 076]SMSController.handleRequest-->just Entered
+[20250104 17:48:09 076]SMSController.handleRequest-->calling FCHandler_Signoff.getSignOffResponce
+[20250104 17:48:09 076]FCHandler_Signoff.getSignOffResponce-->just Entered
+[20250104 17:48:09 076]FCHandler_Signoff.getSignOffResponce-->parsing request XML
+[20250104 17:48:09 076]FCHandler_Signoff.getSignOffResponce-->userId=57150
+[20250104 17:48:09 077]FCHandler_Signoff.getSignOffResponce-->terminalId=10.42.0.1
+[20250104 17:48:09 077]FCHandler_Signoff.getSignOffResponce-->signOnSerial=11051
+[20250104 17:48:09 077]FCHandler_Signoff.getSignOffResponce-->branchCode=A15
+[20250104 17:48:09 077]FCHandler_Signoff.getSignOffResponce-->calling FCApplicationGlobals.getFCUserGlobals
+[20250104 17:48:09 077]FCHandler_Signoff.getSignOffResponce-->Creating SMS bean
+[20250104 17:48:09 077]FCHandler_Signoff.getSignOffResponce-->calling sms.smsSignOff
+[20250104 17:48:09 077]FCJSMSBean.smsSignOff-->userId = 57150 terminalId = 10.42.0.1
+[20250104 17:48:09 078]SMSOracleDAO.getAccessLogCount-->Query=select  count(SEQUENCE_NO) from smtb_sms_log where user_id = ? and terminal_id = ? and end_time is null and exit_flag = 0 and function_id <> ? and not exists ( select 1 from smtb_menu m where  smtb_sms_log.function_id = m.function_id and m.type_string in ( 'LNM', 'D', 'LNC', 'MSP' ) ) 
+[20250104 17:48:09 079]SMSOracleDAO.updateSmsEndLogs-->Query=update smtb_sms_log set end_time = ?, exit_flag = ?, system_end_time = ? where user_id = ? and terminal_id = ? and sequence_no >= ? and end_time is null
+[20250104 17:48:09 079]SMSOracleDAO.getDBServerTime-->select to_char(SYSTIMESTAMP,'HH24:MI:SS.FF9') from dual
+[20250104 17:48:09 079]SMSOracleDAO.getToday-->Current Branch = A15
+[20250104 17:48:09 080]SMSOracleDAO.getToday-->today = 2025-12-31
+[20250104 17:48:09 080]SMSOracleDAO.getOffsetTime-->Current Branch = A15
+[20250104 17:48:09 081]SMSOracleDAO.getHostTimeZone-->Current Branch = A15
+[20250104 17:48:09 084]SMSOracleDAO.deleteSmtbCurrentUsers-->Query=delete from smtb_current_users where user_id = ? and sequence_no=?
+[20250104 17:48:09 086]SMSOracleDAO.deleteSmtbCurrentEntity-->Query=delete from SMTB_CURRENT_ENTITY where user_id = ? and sequence_no=?
+[20250104 17:48:09 087]SMSOracleDAO.clearCstbAdvLogs-->Query=delete from cstb_adv_lock where user_id = ? and signonserial=?
+[20250104 17:48:09 088]FCHandler_Signoff.getSignOffResponce-->returned signOff flag=true
+[20250104 17:48:09 088]FCHandler_Signoff.getSignOffResponce-->Inside Static Data Clearance
+[20250104 17:48:09 088]FCHandler_Signoff.getSignOffResponce-->Static Data Cleared
+[20250104 17:48:09 088]FCHandler_Signoff.getSignOffResponce-->success
+[20250104 17:48:09 088]SMSController.handleRequest-->success
+[20250104 17:48:09 088]HostUpload.*****APPSERVER LOG END*****
+[20250104 17:48:19 745]HostUpload.*****Appserver Log Starts*****
+[20250104 17:48:19 745]HostUpload.processMsg-->Creating FCControllerSMS
+[20250104 17:48:19 745]FCControllerSMS.SMSController.handleRequest-->just Entered
+[20250104 17:48:19 745]FCControllerSMS.SMSController.handleRequest-->calling FCHandlerLogin.getLoginResponse
+[20250104 17:48:19 745]FCHandlerLogin.getLoginResponse-->just Entered
+[20250104 17:48:19 745]FCHandlerLogin.getLoginResponse-->getting FCJLoginHome from FCServiceLocator
+[20250104 17:48:19 745]FCHandlerLogin.getLoginResponse-->message=
+[20250104 17:48:19 745]FCHandlerLogin.getLoginResponse-->calling FCJLogin.validateLogin
+[20250104 17:48:19 745]FCJLoginBean.validateMultiCoreLogin-->Just Entered
+[20250104 17:48:19 745]FCJLoginBean.validateLogin-->getting data source =SMS from FCServiceLocator
+[20250104 17:48:19 746]FCJLoginBean.validateMultiCoreLogin-->calling smsDAO.getLastLoginDetails
+[20250104 17:48:19 746]SMSOracleDAO.getLastLoginDetails-->Query=select /*+ result_cache */ to_char(LAST_SIGNED_ON, 'YYYY-MM-DD HH24:MI:SS'), NO_SUCCESSIVE_LOGINS from smtb_userlog_details where user_id=( select user_id from SSTB_USER where user_id = ? OR lower(LDAP_USER) = ?)
+[20250104 17:48:19 746]SMSOracleDAO.getLastLoginDetails-->userId= 57150
+[20250104 17:48:19 746]SMSOracleDAO.getLastLoginDetails-->l_userId= 57150
+[20250104 17:48:19 749]SMSOracleDAO.getLastLoginDetails-->invalidLogins= 0
+[20250104 17:48:19 749]SMSOracleDAO.getLastLoginDetails-->lastLoginDetails[0] = 2025-01-04 12:12:16
+[20250104 17:48:19 749]FCJLoginBean.validateMultiCoreLogin-->calling FCCLoginDBOracle
+[20250104 17:48:19 749]FCJLoginBean.validateMultiCoreLogin-->calling FCCLoginDBOracle.login
+[20250104 17:48:19 749]FCCLoginDBOracle.login-->just Entered
+[20250104 17:48:19 749]FCCLoginDBOracle.login-->terminalId=10.42.0.1
+[20250104 17:48:19 749]FCCLoginDBOracle.login-->Getitng Ds from FCServiceLocator
+[20250104 17:48:19 751]FCCLoginDBOracle.login-->query to be executed in sms schema=select /*+ result_cache */ * from SSTB_USER where user_id=? or upper(ldap_user)=?
+[20250104 17:48:19 759]FCCLoginDBOracle.login-->query=select /*+ result_cache */ * from SMTB_USER where user_id=? and once_auth ='Y' and record_stat='O'
+[20250104 17:48:19 760]FCCLoginDBOracle.login-->query=SELECT /*+ result_cache */ * FROM smtb_userlog_details where user_id=(select user_id from sstb_user  where user_id=? or ldap_user=?)
+[20250104 17:48:19 762]FCCLoginDBOracleExtn.checkAllowedTime-->Started custom checkAllowedTime
+[20250104 17:48:19 762]FCCLoginDBOracleExtn.checkAllowedIP-->Started custom checkAllowedIP
+[20250104 17:48:19 765]FCCLoginDBOracle.login-->FCCLoginDBOracle.Login-->Checking Branch Dates
+[20250104 17:48:19 765]FCCLoginDBOracle.login-->Executing query--> select * from sttm_dates where branch_code =  A15
+[20250104 17:48:19 765]FCCLoginDBOracle.login-->today in result set as fetched from DB-->2025-12-31
+[20250104 17:48:19 765]FCCLoginDBOracle.getTodayForFCPMTS--> Just Entered
+[20250104 17:48:19 766]FCCLoginDBOracle.FCPMTS is presnt 
+[20250104 17:48:19 767]FCCLoginDBOracle.defaultDate true
+[20250104 17:48:19 767]FCCLoginDBOracle.Today from FCPMTS after trunc timestamp= 2025-12-31
+[20250104 17:48:19 767]FCCLoginDBOracle.Start Date = 1800-01-01
+[20250104 17:48:19 767]FCCLoginDBOracle.End Date = 2080-08-01
+[20250104 17:48:19 767]FCCLoginDBOracle.login-->FCCLoginDBOracle.Login-->User  Holiday Maintenance
+[20250104 17:48:19 767]FCCLoginDBOracle.login-->Executing query--> select /*+ result_cache */ * from smtb_user_holiday where user_id =  57150
+[20250104 17:48:19 767]FCCLoginDBOracle.login-->inside SSO required = 'N'
+[20250104 17:48:19 767]FCCLoginDBOracle.login-->Executing query--> select /*+ result_cache */ * from smtb_parameters
+[20250104 17:48:19 773]FCCLoginDBOracle.login-->FCCLoginDBOracle.Login-->pwd expiry - PWD changed on - pwd changed after2026-06-29 2025-12-31 180
+[20250104 17:48:19 773]FCCLoginDBOracle.FCCLoginDBOracle.Login-->Expirymsg2026-06-28
+[20250104 17:48:19 775]FCCLoginDBOracle.login-->FCCLoginDBOracle.Login-->updating the last login date
+[20250104 17:48:19 775]FCCLoginDBOracle.login-->successful Logins0
+[20250104 17:48:19 775]FCCLoginDBOracle.loginMultiCore-->today :: 2025-12-31
+[20250104 17:48:19 775]FCCLoginDBOracle.loginMultiCore-->currentDateTime :: 2025-01-04 12:18:19
+[20250104 17:48:19 775]FCCLoginDBOracle.login-->Executing query-->Update smtb_userlog_details set NO_SUCCESSIVE_LOGINS = ?, LAST_SIGNED_ON = to_date('2025-01-04 12:18:19', 'YYYY-MM-DD HH24:MI:SS') where user_id=(select user_id from sstb_user where user_id = ? or ldap_user = ?)
+[20250104 17:48:19 780]FCCLoginDBOracle.login-->FCCLoginDBOracle.Login-->Checking the User Exist
+[20250104 17:48:19 780]FCCLoginDBOracle.login-->query=select count(*) from smtb_current_users where user_id = 57150
+[20250104 17:48:19 780]FCCLoginDBOracle.login-->FCCLoginDBOracle.Login-->Checking Branch Details
+[20250104 17:48:19 781]FCCLoginDBOracle.validateMultiCoreLogin-->query--> select /*+ result_cache */ 'O' record_stat, time_level from sttm_core_branch_status where branch_code = A15
+[20250104 17:48:19 781]FCJLoginBean.validateMultiCoreLogin-->successful login
+[20250104 17:48:19 781]FCJLoginBean.validateMultiCoreLogin-->calling smsDAO.getSignOnSequence
+[20250104 17:48:19 781]SMSOracleDAO.getSignOnSequence-->select smsqs_smslog.nextval from dual 
+[20250104 17:48:19 782]FCJLoginBean.validateMultiCoreLogin-->sequence number generated for user 57150:11058
+[20250104 17:48:19 782]FCJLoginBean.validateMultiCoreLogin-->calling smsDAO.getBranchDetails
+[20250104 17:48:19 782]SMSOracleDAO.getBranchDetails-->Query=select /*+ result_cache */ home_branch  from smtb_user where user_id=? and record_stat='O'
+[20250104 17:48:19 785]SMSOracleDAO.getBranchDetails-->Query=select /*+ result_cache */ * from sttm_host where host_name in(select host_name from sttm_core_branch_pref where branch_code=?)
+[20250104 17:48:19 786]SMSOracleDAO.getBranchDetails-->Query=SELECT /*+ result_cache */ to_char(today,'YYYY-MM-DD') FROM sttm_dates WHERE branch_code = ?
+[20250104 17:48:19 787]FCHandlerLogin.getLoginResponse-->homeDept = 
+[20250104 17:48:19 787]FCHandlerLogin.getLoginResponse-->Creating User Globals
+[20250104 17:48:19 787]FCUserGlobalsOracleDAO.callUserContainer--> Just Entered
+[20250104 17:48:19 800]FCUserGlobalsOracleDAO.26362244 >>>getSttmBranch-----> dsnNameINIT_DSN
+[20250104 17:48:19 800]FCUserGlobalsOracleDAO.26362244 >>>getSttmBranch-----> fieldValue57150~A15~null~~57150~ENG~.,~YYYY-MM-DD~SANGEETHA S~Y~57150~N~N~Y~Y~Y~M~N~0~N~N~A15~047~IN~FCBIP~INR~INDIA~INIT_DSN~N~INDIA~
+[20250104 17:48:19 804]FCUserGlobalsOracleDAO.getSttmHostTimeZone--> Just Entered
+[20250104 17:48:19 804]FCUserGlobalsOracleDAO.getSttmHostTimeZone--> getting value from resuly String
