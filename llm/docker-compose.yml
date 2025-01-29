@@ -1,21 +1,38 @@
+version: "3.9"
+
 services:
-  transinnovate:
-    build:
-      context: /root/ooo/doc_playgrd/llm
-      dockerfile: Dockerfile
+  # MLflow UI in ephemeral (in-memory) mode
+  mlflow:
+    image: python:3.10-slim
+    container_name: mlflow_server
+    working_dir: /mlflow
+    ports:
+      - "5000:5000"
+    command: >
+      sh -c "apt-get update &&
+      apt-get install -y --no-install-recommends python3-pip curl &&
+      pip install mlflow &&
+      mlflow ui
+        --host 0.0.0.0
+        --port 5000"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  # Your Streamlit app
+  app:
+    build: .
     container_name: transinnovate_app
     ports:
-      - "8501:8501"  # Streamlit
-      - "5000:5000"  # MLflow UI
+      - "8501:8501"
+    depends_on:
+      mlflow:
+        condition: service_healthy
     volumes:
-      - /root/ooo/doc_playgrd/llm/IMGBRANOLTP.txt:/app/IMGBRANOLTP.txt
-      - /root/ooo/doc_playgrd/llm/error_keywords.txt:/app/error_keywords.txt
+      - .:/app
     env_file:
       - .env
-    restart: always
-    command: >
-      sh -c "
-      mlflow server --host 0.0.0.0 --port 5000 &
-      sleep 5;
-      exec streamlit run dockerapp_key.py --server.port=8501 --server.address=0.0.0.0
-      "
+    environment:
+      MLFLOW_TRACKING_URI: "http://mlflow:5000"
