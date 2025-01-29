@@ -4,12 +4,12 @@ services:
   app:
     build: .
     container_name: transinnovate_app
-    # Map local port 8501 to container's 8501
+    
     ports:
       - "8501:8501"
-    # Mount local folder into the container so you can edit code without rebuild
+    
     volumes:
       - .:/app
-    # Load environment variables (API keys) from .env file
+    
     env_file:
       - .env
